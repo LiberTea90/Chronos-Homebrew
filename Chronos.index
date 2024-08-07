@@ -8,6 +8,6 @@
 	</info>
 	<files>
 		<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
-		
+		<file name="paladin-oath-of-the-grave.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/paladin-oath-of-the-grave.xml" />		
 	</files>
 </index>
