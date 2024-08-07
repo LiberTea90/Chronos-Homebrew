@@ -1,7 +1,7 @@
 # repositoryname
 additional content to extend [Aurora](https://aurorabuilder.com/), by LiberTea90
 
-index url: https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos.index](https://github.com/LiberTea90/Chronos-Homebrew/blob/master/Chronos.index
+index url: https://github.com/LiberTea90/Chronos-Homebrew/blob/master/Chronos.index
 
 ---
 
