@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.0.0">
+		<update version="1.2.0">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -18,11 +18,11 @@
 			
 		</description>
 		<setters>
-			<set name="keywords"></set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
+			<set name="type" addition="battleaxe">Weapon</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Battleaxe</set>
 			<set name="name-format">Clockwork Battleaxe</set>
