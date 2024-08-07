@@ -7,6 +7,28 @@
 		</update>
 	</info>
 	
+	<!-- Weapons -->
+	<element name="Clockwork Battleaxe" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_CLOCKWORK_BATTLEAXE">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><b>Clock Strike</b> When you hit a creature with this weapon you can expend one charge and force them to make a Wisdom saving throw (DC 15).  On a failure the creature suffers the effects of a "Slow" spell (using your concentration).  A creature affected by the "Slow" spell in this way can repeat the saving throw at the end of its turn.  You may dismiss the effect as a Bonus Action on your turn.</p>
+			<p></p>
+			<p class="indent"><b>Defect:</b></p>
+			<p class="indent"><b>Gear Jam</b> If the creature succeeds on their saving throw against your Clock Strike, the effect backfires.  Make a Wisdom saving throw (DC 15).  On a failure you suffer the effects of a "Slow" spell (using your concentration).  You may repeat the saving throw at the end of your next turn or dismiss the effect as a Bonus Action on your next turn.</p>
+			
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Battleaxe</set>
+			<set name="name-format">Clockwork Battleaxe</set>
+		</setters>
+	</element>
+	
 	<!-- Feats -->
 	<element name="Infernal Step" type="Feat" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_FEAT_INFERNAL_STEP">
 		<description>
