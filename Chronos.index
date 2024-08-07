@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Your Content</name>
+		<update version="1.0.0">
+			<file name="Chronos.index" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos.index" />
+		</update>
+	</info>
+	<files>
+		<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
+		
+	</files>
+</index>
