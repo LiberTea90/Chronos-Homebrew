@@ -3,7 +3,7 @@
 	<info>
 		<name>Your Content</name>
 		<update version="1.0.0">
-			<file name="Chronos.index" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos.index" />
+			<file name="Chronos.index" url="https://github.com/LiberTea90/Chronos-Homebrew/blob/master/Chronos.index" />
 		</update>
 	</info>
 	<files>
