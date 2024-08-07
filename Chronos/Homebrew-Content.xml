@@ -8,7 +8,7 @@
 	</info>
 	
 	<!-- Feats -->
-	<!-- <element name="Infernal Step" type="Feat" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_FEAT_INFERNAL_STEP">
+	<element name="Infernal Step" type="Feat" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_FEAT_INFERNAL_STEP">
 		<description>
 			<p><i>Prerequisite: DM Discretion</i></p>
 			<p></p>
@@ -21,6 +21,6 @@
 			<description>You can cast the <b><i>Misty Step</i></b> spell once per day without a spell slot.
 			When you cast the spell using this feat all creatures within 10 feet of where you disappeared must make a Dexterity Saving throw, taking 2d6 Fire damage on a failed save or half as much on a successful one.</description>
 		</sheet>
-	</element> -->
+	</element>
 	
 </elements>
