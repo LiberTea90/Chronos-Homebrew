@@ -53,16 +53,16 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Paladin" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="3" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="5" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="5" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="9" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="17" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Paladin" prepared="true" />
         </rules>
     </element>
     
