@@ -45,4 +45,28 @@
 		</sheet>
 	</element>
 	
+	<!-- Spells -->
+	 <element name="Starlight Spear" type="Spell" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SPELL_STARLIGHT_SPEAR">
+        <supports>Cleric, Paladin, Sorcerer, Wizard</supports>
+        <description>
+            <p>You weave threads of starlight together to create a spear of solidified light in your hand. This magic spear lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals 2d12 radiant damage on a hit and has the reach and thrown (20/60ft.) properties. In addition, if you move at least 20 feet straight toward a target, your next attack with this weapon deals an additional 1d12 radiant damage on a hit.</p>
+            <p class="indent">If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the spear to reappear in your hand.</p>
+            <p class="indent"><em><strong>At Higher Levels.</strong></em> When you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to 3d12. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d12. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d12.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time"> 1 bonus action</set>
+            <set name="duration"> Concentration, up to 1 minute</set>
+            <set name="range"> Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+	
 </elements>
