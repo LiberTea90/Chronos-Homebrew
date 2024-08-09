@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.2.2">
+		<update version="1.2.3">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -93,7 +93,7 @@
         </setters>
     </element>
 	
-	<element name="Meteor Strike" type="Spell" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SPELL_METEOR_STRIKE">
+	<element name="Meteor Strike" type="Spell" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_SPELL_METEOR_STRIKE">
         <supports>Paladin, Ranger</supports>
         <description>
             <p>The next time you hit a creature with a weapon attack during the spell’s duration, your weapon strikes with the momentum of a meteor. The attack deals an extra 2d6 fire damage, and the target must succeed on a Strength saving throw or be knocked prone or pushed 5 feet away from you (your choice). A Large or larger creature has advantage on this saving throw.</p>
@@ -115,7 +115,7 @@
         </setters>
     </element>
 	
-	 <element name="Dazzling Gleam" type="Spell" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SPELL_DAZZLING_GLEAM">
+	 <element name="Dazzling Gleam" type="Spell" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_SPELL_DAZZLING_GLEAM">
         <supports>Bard, Paladin, Sorcerer, Warlock</supports>
         <description>
             <p>You release a burst of light. Each creature within 20 feet of you must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage and is blinded until the end of its next turn. On a successful save, it takes half as much damage and is not blinded.</p>
@@ -137,7 +137,7 @@
         </setters>
     </element>
 	
-	<element name="Gleam-Eye" type="Spell" source="All the Lights in the Sky are Stars" id="ID_AEYANA_ATLAS_SPELL_GLEAM-EYE">
+	<element name="Gleam-Eye" type="Spell" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_SPELL_GLEAM-EYE">
         <supports>Bard, Paladin, Sorcerer, Warlock</supports>
         <description>
             <p>You imbue your eyes with an endearing twinkle that distracts even the most hardened of hearts.</p>
