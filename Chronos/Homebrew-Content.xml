@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.2.4">
+		<update version="1.2.5">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -53,7 +53,7 @@
 		</setters>
 	</element>
 	
-	<!-- Wonderous Items -->
+	<!-- Wondrous Items -->
 	<element name="Cloak of the Gull" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_CLOAK_OF_THE_GULL">
 		<description>
 			<p>This cloak is bright white with a thick black trim along the bottom.</p>
