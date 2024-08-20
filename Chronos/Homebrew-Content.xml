@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.2.3">
+		<update version="1.2.4">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -50,6 +50,46 @@
 			<set name="type" addition="javelin">Weapon</set>
 			<set name="weapon">Javelin</set>
 			<set name="name-format">Storm Javelin</set>
+		</setters>
+	</element>
+	
+	<!-- Wonderous Items -->
+	<element name="Cloak of the Gull" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_CLOAK_OF_THE_GULL">
+		<description>
+			<p>This cloak is bright white with a thick black trim along the bottom.</p>
+			<p>1 / Day - While wearing this Cloak you can use a Bonus Action to speak the cloak's command word causing it to transform into a giant pair of feathered wings, similar to those of a seagull.  You gain a 60ft flying speed for 10 minutes or until you choose to end the effect as a Bonus Action.</p>
+			<p></p>
+			<p><b>Defect:</b></p>
+			<p><b>Squawk:</b> Your intelligence is reduced to 5 for the duration of this effect.  You are aware of your friends/allies and can understand any language you knew prior to this effect.  You are able to follow simple instructions as well.  Any attempt to speak results in a loud squawking sound identical to that of a seagull.  You are unable to cast spells which require verbal components while under this effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">fly</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+		
+	<element name="Everflowing Potion" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_EVERFLOWING_POTION">
+		<description>
+			<p>This potion acts as a Potion of Greater Healing</p>
+			<p>3 / Day - As a Bonus Action, regain 4d4 + 4 hit points (Use an Action for Max Healing)</p>
+			<p></p>
+			<p><b>Defect:</b></p>
+			<p><b>Is it supposed to look like that?:</b> Roll a d6.  On a 1 the potion is actually a toxic brew dealing poison damage equal to what would have been gained through healing.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 	
