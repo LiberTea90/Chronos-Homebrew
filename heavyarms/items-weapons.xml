@@ -13,6 +13,13 @@
 		- All Muzzle Devices
 -->
 	
+	<info>
+		<name>items-weapons</name>
+		<update version="1.0">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/items-weapons.xml" />
+		</update>
+	</info>
+	
 	<!-- Firearms -->
 	<!-- Pistols -->
 	<!-- Pistol, Hand Cannon -->

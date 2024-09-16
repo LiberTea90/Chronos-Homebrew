@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>	
+
+	<info>
+		<name>gunslinger-maverick</name>
+		<update version="1.0">
+			<file name="gunslinger-maverick.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-maverick.xml" />
+		</update>
+	</info>
+	
 	<element name="Maverick" type="Archetype" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_MAVERICK">
 		<supports>Gunslinger Trail</supports>
 		<description>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>	
+
+	<info>
+		<name>gunslinger-revelator</name>
+		<update version="1.0">
+			<file name="gunslinger-revelator.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-revelator.xml" />
+		</update>
+	</info>
+
 	<element name="Revelator" type="Archetype" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_REVELATOR">
 		<supports>Gunslinger Trail</supports>
 		<description>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>class-gunslinger</name>
+		<update version="1.0">
+			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/class-gunslinger.xml" />
+		</update>
+	</info>
+
 	<element name="Gunslinger" type="Class" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER">
 		<description>
 			<p>An old saloon, scored with bullets and stained with blood, stands before a lone gunslinger.  "I've come for you!" she yells, the sound cutting through the revelry within.  In the silence, she waits, the wind grasping at her scarf and spitting dust across her path.  A large man pushes through the doors.  "Heh," he sneers, fingering a gun at his hip.  "And what's a little-" he begins, moving to draw, but she is faster, her fists full of roaring thunder.</p>
