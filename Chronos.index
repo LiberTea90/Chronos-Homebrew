@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>Chronos Homebrew</name>
-		<update version="1.5.0">
+		<update version="1.5.1">
 			<file name="Chronos.index" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos.index" />
 		</update>
 	</info>
 	<files>
 		<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
-		<file name="paladin-oath-of-the-grave.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/paladin-oath-of-the-grave.xml" />		
+		<file name="paladin-oath-of-the-grave.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/paladin-oath-of-the-grave.xml" />
+		<file name="Heavyarms.index" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Heavyarms.index" />
 	</files>
 </index>
