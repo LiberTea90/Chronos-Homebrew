@@ -3,7 +3,7 @@
 	<info>
 		<name>Heavyarms</name>
 		<update version="1.0.0">
-			<file name="Heavyarms.index" url="" />
+			<file name="Heavyarms.index" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Heavyarms.index" />
 		</update>
 	</info>
 	<files>
