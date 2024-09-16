@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Gunslinger" type="Class" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER">
+		<description>
+			<p>An old saloon, scored with bullets and stained with blood, stands before a lone gunslinger.  "I've come for you!" she yells, the sound cutting through the revelry within.  In the silence, she waits, the wind grasping at her scarf and spitting dust across her path.  A large man pushes through the doors.  "Heh," he sneers, fingering a gun at his hip.  "And what's a little-" he begins, moving to draw, but she is faster, her fists full of roaring thunder.</p>
+			<p class="indent">A mercenary gauges his final opponent through a haze of smoke.  She returns his appraising stare from over her cards.  She waits, biting on her cigar before throwing in a stack of chips, but her nervous chewing betrays the bluff.  The man returns her smile, "All in."</p>
+			<p class="indent">In a hostelry basement, an old man heaves himself from a copper bathtub, steam clinging to his scarred body.  "Evil comes," he whispers in a cracked voice.  The exclamations of his bathing companions are cut short by the sound of heavy, dragging footfalls overhead.  The man mutters a brief prayer as he recovers his gun belt from a loose pile of clothes.</p>
+			<p class="indent">With an aim as sharp as their wit, gunslingers pursue their own ends for their own reasons, beholden to no code except their own, and trusting no judgment save that learned through experience.  The wild frontier breeds hard folks to hard ways, a dangerous land where life can hinge on a deal of the cards or the speed of the draw.</p>
+			<h4>CREATING A GUNSLINGER</h4>
+			<p>When building a gunslinger consider how you came to live by the gun.  Was it for justice?  Fame?  To protect someone or something you hold dear?  And what drew you now?  The reassuring clink of coin in your pocket?  The righteous satisfaction of vanquishing evil?  Maybe past transgressions weigh heavy on your heart, driving you to find redemption?  Or do you seek revenge?  Who is the character behind the gun?</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a gunslinger quickly by following these suggestions.  First, make Dexterity your highest ability score, followed by Wisdom.  Second, choose the criminal or folk hero background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a gunslinger, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per gunslinger level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per gunslinger level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light Armor</li>
+                <li><strong>Weapons:</strong> Simple weapons, firearms, whips</li>
+                <li><strong>Tools:</strong> Thieves' Tools, tinkers' tools, or one type of gaming set</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Charisma</li>
+                <li><strong>Skills:</strong> Choose two skills from Animal Handling, Athletics, Insight, Intimidation, Perception, Sleight of Hand, Stealth, and Survival</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li> leather armor and a simple weapon of your choice </li>
+				<li> a sidearm and 20 rounds </li>
+				<li><i>(a)</i> a hand cannon and 20 rounds <i>(b)</i> a repeating rifle and 20 rounds or <i>(c)</i> a sawed-off shotgun and 20 shotgun shells</li>
+				<li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
+			</ul>
+			<h5 class="caption">THE GUNSLINGER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td>Bad Medicine</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td>1</td><td class="left">Deadeye, Bad Medicine</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td>1</td><td class="left">Grit, Quickdraw</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td>2</td><td class="left">Gunslinger Trail</td></tr>
+				<tr><td> 4th</td><td>+2</td><td>2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td>3</td><td class="left">Extra Attack, Lock N' Load</td></tr>
+				<tr><td> 6th</td><td>+3</td><td>3</td><td class="left">Gunslinger Trail Feature</td></tr>
+				<tr><td> 7th</td><td>+3</td><td>3</td><td class="left">Ace In The Hole</td></tr>
+				<tr><td> 8th</td><td>+3</td><td>3</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td>4</td><td class="left">Born Lucky</td></tr>
+				<tr><td>10th</td><td>+4</td><td>4</td><td class="left">Gunslinger Trail Feature</td></tr>
+				<tr><td>11th</td><td>+4</td><td>4</td><td class="left">Frontier Justice</td></tr>
+				<tr><td>12th</td><td>+4</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td>5</td><td class="left">Skullcracker</td></tr>
+				<tr><td>14th</td><td>+5</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td>5</td><td class="left">Cheat Death</td></tr>
+				<tr><td>16th</td><td>+5</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td>6</td><td class="left">Gunslinger Trail Feature</td></tr>
+				<tr><td>18th</td><td>+6</td><td>6</td><td class="left">True Grit</td></tr>
+				<tr><td>19th</td><td>+6</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>+6</td><td>6</td><td class="left">Golden Gun</td></tr>
+			</table>
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_DEADEYE" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_BAD_MEDICINE" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_GRIT" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_QUICKDRAW" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_TRAIL" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_LOCK_N_LOAD" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_ACE_IN_THE_HOLE" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_BORN_LUCKY" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_FRONTIER_JUSTICE" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_SKULLCRACKER" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_CHEAT_DEATH" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_TRUE_GRIT" />
+			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_GOLDEN_GUN" />
+			<div element="ID_HEAVYARMS_RULE_FIREARM_PROPERTIES" />
+			<div element="ID_HEAVYARMS_RULE_AMMUNITION" />
+			<div element="ID_HEAVYARMS_RULE_BURNING" />
+			<div element="ID_HEAVYARMS_RULE_FIREARM_MODIFICATIONS" />
+			
+			
+		</description>
+		<sheet display="false">
+			<description>A wielder of gunpowder and smoke that follows their own trail.</description>
+		</sheet>
+		<setters>
+			<set name="short">A wielder of gunpowder and smoke that follows their own trail.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_FIREARMS" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<select type="Proficiency" name="Skill Proficiency, Gunslinger" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS | ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS | ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET | ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET | ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET | ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<select type="Proficiency" name="Skill Proficiency, Gunslinger" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_HEAVYARMS_MULTICLASS_GUNSLINGER"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_DEADEYE" level="1"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BAD_MEDICINE" level="1"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_GRIT" level="2"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_QUICKDRAW" level="2"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_TRAIL" level="3"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="4"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_LOCK_N_LOAD" level="5"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ACE_IN_THE_HOLE" level="7"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="8"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BORN_LUCKY" level="9"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_FRONTIER_JUSTICE" level="11"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="12"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_SKULLCRACKER" level="13"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_CHEAT_DEATH" level="15"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="16"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_TRUE_GRIT" level="18"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="19"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_GOLDEN_GUN" level="20"/>
+			
+			
+			
+		</rules>
+		<multiclass id="ID_HEAVYARMS_MULTICLASS_GUNSLINGER">
+			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+			<requirements>([dex:13],[wis:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_FIREARMS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	
+	<element name="Deadeye" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_DEADEYE">
+		<description>
+			<p>In combat, you find your flow with deadly efficiency.  Whenever you hit a creature with a ranged weapon attack, the lowest number you must roll on the d20 to score a critical hit with subsequent ranged weapon attacks decreases by one.  You can gain this benefit multiple times, but it can't reduce the threshold for scoring a critical hit below 16.</p>
+			<p>You lose this benefit if you miss with an attack, you become incapacitated, or if your turn ends and you haven't attacked a hostile creature since your last turn.</p>
+			<p>From 14th level, whenever you gain this benefit, you can gain it one additional time, but it still can't reduce the threshold for scoring a critical hit below 16.</p>
+		</description>
+		<sheet>
+			<description>Whenever you hit a creature with a ranged weapon attack, the lowest number you must roll on the d20 to score a critical hit with subsequent ranged weapon attacks decreases by one.  You can gain this benefit multiple times, but it can't reduce the threshold for scoring a critical hit below 16.
+			You lose this benefit if you miss with an attack, you become incapacitated, or if your turn ends and you haven't attacked a hostile creature since your last turn.
+			  From 14th level, whenever you gain this benefit, you can gain it one additional time, but it still can't reduce the threshold for scoring a critical hit below 16.</description>
+		</sheet>
+	</element>
+	
+	<element name="Bad Medicine" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BAD_MEDICINE">
+		<description>
+			<p>You can roll one additional weapon damage die when determining the extra damage for a critical hit with a firearm.  The number of additional dice increases as you gain levels in this class, as shown in the Bad Medicine column of the Gunslinger table.</p>
+		</description>
+		<sheet>
+			<description>You can roll {{Bad Medicine Dice:amount}} additional weapon dice when determining the damage for a critical hit.</description>
+		</sheet>
+		<rules>
+		<stat name="Bad Medicine Dice:amount" value="1"/>
+		<stat name="Bad Medicine Dice:amount" value="1" level="3" />
+		<stat name="Bad Medicine Dice:amount" value="1" level="5" />
+		<stat name="Bad Medicine Dice:amount" value="1" level="9" />
+		<stat name="Bad Medicine Dice:amount" value="1" level="14" />
+		<stat name="Bad Medicine Dice:amount" value="1" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Grit" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_GRIT">
+		<description>
+			<p>At 2nd level the hard-fought battles of your past have instilled in you a wellspring of resolve, which is represented by grit points.  You have a number of grit points equal to 1 + your Wisdom modifier (minimum of 1 point).</p>
+			<p>You can spend these points to fuel various grit features.  You start knowing four such features: Buck Up, Bullet Time, Covering Fire, and Dodge Roll.  You learn more grit features as you gain levels in this class.</p>
+			<p>When you spend a grit point, it is unavailable until you regain it.  You regain 1 expended grit point whenever you score a critical hit against a hositle creature, and you regain all expended grit points when you finish a short or long rest.</p>
+			<h5 class="caption">Buck Up</h5>
+			<p>You can spend 1 grit point as a bonus action to spend one or more Hit Dice, following the normal rules for regaining hit points using Hit Dice.  The maximum number of Hit Dice you can spend each time you use this feature equals your proficiency bonus.</p>
+			<h5 class="caption">Bullet Time</h5>
+			<p>When a creature you can see makes a ranged attack against you, you can spend 1 grit point to impose disadvantage on the attack roll.</p>
+			<h5 class="caption">Covering Fire</h5>
+			<p>While you are holding a firearm, when a creature you can see within 60 feet of you makes an attack against a creature other than you, you can spend 1 grit point as a reaction to impose disadvantage on the attack roll.</p>
+			<h5 class="caption">Dodge Roll</h5>
+			<p>You can spend 1 grit point as a bonus action to move up to 10 feet without provoking opportunity attacks.  You can't take this bonus action if your speed is 0.</p>
+		</description>
+		<sheet>
+			<description>You have {{grit_points}} Grit points. You regain 1 expended grit point whenever you score a critical hit against a hostile creature and you regain all expended grit points when you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="grit_points" value="1" bonus="base" />
+			<stat name="grit_points" value="wisdom:modifier" />
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BUCK_UP"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BULLET_TIME"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_COVERING_FIRE"/>
+			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_DODGE_ROLL"/>
+		</rules>
+	</element>
+	<element name="Buck Up" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BUCK_UP">
+		<description>
+			<p>You can spend 1 grit point as a bonus action to spend one or more Hit Dice, following the normal rules for regaining hit points using Hit Dice.  The maximum number of Hit Dice you can spend each time you use this feature equals your proficiency bonus.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 1 grit point as a bonus action to spend one or more Hit Dice, following the normal rules for regaining hit points using Hit Dice.  The maximum number of Hit Dice you can spend each time you use this feature equals your proficiency bonus.</description>
+		</sheet>
+	</element>
+	<element name="Bullet Time" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BULLET_TIME">
+		<description>
+			<p>When a creature you can see makes a ranged attack against you, you can spend 1 grit point to impose disadvantage on the attack roll.</p>
+		</description>
+		<sheet>
+			<description>When a creature you can see makes a ranged attack against you, you can spend 1 grit point to impose disadvantage on the attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Covering Fire" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_COVERING_FIRE">
+		<description>
+			<p>While you are holding a firearm, when a creature you can see within 60 feet of you makes an attack against a creature other than you, you can spend 1 grit point as a reaction to impose disadvantage on the attack roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>While you are holding a firearm, when a creature you can see within 60 feet of you makes an attack against a creature other than you, you can spend 1 grit point as a reaction to impose disadvantage on the attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Dodge Roll" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_DODGE_ROLL">
+		<description>
+			<p>You can spend 1 grit point as a bonus action to move up to 10 feet without provoking opportunity attacks.  You can't take this bonus action if your speed is 0.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend 1 grit point as a bonus action to move up to 10 feet without provoking opportunity attacks.  You can't take this bonus action if your speed is 0.</description>
+		</sheet>
+	</element>
+	<element name="Quickdraw" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_QUICKDRAW">
+		<description>
+			<p>Also beginning at 2nd level you have advantage on initiative rolls.  In addition, whenever you draw or stow a firearm, you can draw or stow any number of weapons as part of the same action.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on initiative rolls.  In addition, whenever you draw or stow a firearm, you can draw or stow any number of weapons as part of the same action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Gunslinger Trail" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_TRAIL">
+		<description>
+			<p>At 3rd level, you choose a path to walk: Maverick, Beastrider, Enforcer, Preacher, or Revelator, each of which is detailed at the end of the class's description.  Your choice grants you features at 3rd level and again at 6th, 10th, and 17th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Gunslinger Trail" supports="Gunslinger Trail" level="3" />
+		</rules>
+	</element>
+	
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Gunslinger 4)" supports="Improvement Option,Gunslinger,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 8)" supports="Improvement Option,Gunslinger,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 12)" supports="Improvement Option,Gunslinger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 16)" supports="Improvement Option,Gunslinger,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Gunslinger 19)" supports="Improvement Option,Gunslinger,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Lock N' Load" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_LOCK_N_LOAD">
+		<description>
+			<p>Also at 5th level you can load or reload a firearm you are holding as part of your move or your action.</p>
+		</description>
+		<sheet>
+			<description>You can load or reload a firearm you are holding as part of your move or your action.</description>
+		</sheet>
+	</element>
+	<element name="Ace In the Hole" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ACE_IN_THE_HOLE">
+		<description>
+			<p>Beginning at 7th level, once per turn when you miss with an attack roll, you can spend 1 grit point to add your Widsom Modifier to the roll, potentially turning the miss into a hit.</p>
+		</description>
+		<sheet>
+			<description>Once per turn when you miss with an attack roll, you can spend 1 grit point to add your Widsom Modifier to the roll, potentially turning the miss into a hit.</description>
+		</sheet>
+	</element>
+	<element name="Born Lucky" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BORN_LUCKY">
+		<description>
+			<p>Beginning at 9th level when you are forced to make a saving throw, you can spend 1 grit point to make it with advantage.</p>
+		</description>
+		<sheet>
+			<description>When you are forced to make a saving throw, you can spend 1 grit point to make it with advantage.</description>
+		</sheet>
+	</element>
+	<element name="Frontier Justice" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_FRONTIER_JUSTICE">
+		<description>
+			<p>Beginning at 11th level when a creature you can see willingly moves into a space within 10 feet of you while you are wielding a firearm, you can use your reaction to make one ranged weapon attack against that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see willingly moves into a space within 10 feet of you while you are wielding a firearm, you can use your reaction to make one ranged weapon attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name="Skullcracker" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_SKULLCRACKER">
+		<description>
+			<p>Beginning at 13th level, when you deal damage with a ranged weapon attack to a creature that is concentrating, the target has disadvantage on the saving throw it makes to maintain its concentration.  If the attack is a critical hit, the target automatically fails this saving throw.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage with a ranged weapon attack to a creature that is concentrating, the target has disadvantage on the saving throw it makes to maintain its concentration.  If the attack is a critical hit, the target automatically fails this saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Cheat Death" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_CHEAT_DEATH">
+		<description>
+			<p>Beginning at 15th level when you are reduced to 0 hit points but not killed outright, you can spend 1 grit point to drop to 1 hit point instead.  Each time you do so, you gain 1 level of exhaustion.</p>
+		</description>
+		<sheet>
+			<description>When you are reduced to 0 hit points but not killed outright, you can spend 1 grit point to drop to 1 hit point instead.  Each time you do so, you gain 1 level of exhaustion.</description>
+		</sheet>
+	</element>
+	<element name="True Grit" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_TRUE_GRIT">
+		<description>
+			<p>By 18th level, when you start your turn and have no grit points remaining, you regain 1 grit point.</p>
+		</description>
+		<sheet>
+			<description>When you start your turn and have no grit points remaining, you regain 1 grit point.</description>
+		</sheet>
+	</element>
+	<element name="Golden Gun" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_GOLDEN_GUN">
+		<description>
+			<p>At 20th level, you have advantage on ranged weapon attack rolls while the threshold for scoring a critical hit is 16 or lower.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on ranged weapon attack rolls while the threshold for scoring a critical hit is 16 or lower.</description>
+		</sheet>
+	</element>
+	
+	<!-- Firearms Rule -->
+	<element name="Firearms" type="Rule" source="Heavyarms" id="ID_HEAVYARMS_RULE_FIREARM_PROPERTIES">
+		<supports>Gunslinger</supports>
+		<description>
+			<p>Firearms have special properties related to their use as shown in the Firearms table.</p>
+			<h5 class="caption">Ammunition</h5>
+			<p>You can discharge a firearm only if appropriate ammunition has been loaded into the weapon.  Each time you discharge a firearm, you expend one piece of ammunition.  Firearm ammunition is destroyed on use.</p>
+			<h5 class="caption">Kick</h5>
+			<p>This weapon can be used with one or two hands.  You have disadvantage on ranged attack rolls when using it with one hand unless your stength score is equal to or higher than the weapon's kick score.</p>
+			<h5 class="caption">Loud</h5>
+			<p>Attacks with this weapon emit a piercing crack, audible out to 300 feet.</p>
+			<h5 class="caption">Pocket</h5>
+			<p>You have advantage on Dexterity (Sleight of Hand) checks to conceal this weapon.</p>
+			<h5 class="caption">Reload</h5>
+			<p>This weapon can be fired a number of times equal to its reload score before it must be reloaded in order to fire again.  Reloading takes an action or bonus action.  You must have a free hand to reload a firearm.</p>
+			<h5 class="caption">Special</h5>
+			<p><b>Shotguns.</b>  The damage of a shotgun increaes to 1d12 when attacking a target within 10 feet of you.</p>
+		</description>
+	</element>
+	
+	<!-- Ammunition Rule -->
+	<element name="Ammunition" type="Rule" source="Heavyarms" id="ID_HEAVYARMS_RULE_AMMUNITION">
+		<supports>Gunslinger</supports>
+		<description>
+			<p>Ammunition used by firearms is presented here.</p>
+			<table>
+				<thead>
+					<tr><td>Ammunition Type</td><td>Weapon</td><td>Cost</td><td>Weight</td></tr>
+				</thead>
+				<tr><td><i>General</i></td><td></td><td></td><td></td></tr>
+				<tr><td>Rounds (20)</td><td>Pistols, Rifles</td><td>3 gp</td><td>1 lb.</td></tr>
+				<tr><td>Shotshells (20)</td><td>Shotguns</td><td>3 gp</td><td>1 lb.</td></tr>
+				<tr><td><i>Special</i></td><td></td><td></td><td></td></tr>
+				<tr><td>Heat Seekers (20)</td><td>All Firearms</td><td>100 gp</td><td>1 lb.</td></tr>
+				<tr><td>Incendiary (20)</td><td>All Firearms</td><td>100 gp</td><td>1 lb.</td></tr>
+				<tr><td>Silvered (20)</td><td>All Firearms</td><td>50 gp</td><td>1 lb.</td></tr>
+			</table>
+			<h5>Special Ammunition</h5>
+			<p><b>Heat Seeker.</b> When you attack a creature that isn’t a Construct or an Undead using this ammunition, you gain a +1 bonus to the attack roll, and the target gains no benefit from cover for the attack.</p>
+			<p><b>Incendiary.</b> Attacks using this ammunition that hit deal fire damage instead of the weapon’s normal damage type, cause the target to start burning (1d6), and ignite flammable objects that aren’t being worn or carried.</p>
+		</description>
+	</element>
+	
+	<!-- Burning Rule -->
+	<element name="Burning" type="Rule" source="Heavyarms" id="ID_HEAVYARMS_RULE_BURNING">
+		<supports>Gunslinger</supports>
+		<description>
+			<p> A burning creature takes fire damage at the start of each of its turns. The amount of damage is shown in the triggering effect in parentheses.</p>
+			<p>The creature sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+			<p> If a creature is subjected to burning from multiple sources, only the highest source of damage applies; they aren’t added together. For example, a creature subjected to burning (1d6) and burning (2d6) takes 2d6 fire damage at the start of each of its turns.</p>
+			<p> The condition ends if the creature or another creature within 5 feet of it uses an action to put out the flames, or some other effect douses it, such as being doused with water.</p>
+		</description>
+	</element>
+	
+	<!-- Firearm Modifications -->
+	<element name="Firearm Modifications" type="Rule" source="Heavyarms" id="ID_HEAVYARMS_RULE_FIREARM_MODIFICATIONS">
+		<supports>Gunslinger</supports>
+		<description>
+			<p>The range of upgrades available for firearms is shown in the Firearm Modifications table.</p>
+			<h5>Firearm Modifications</h5>
+			<table>
+				<thead>
+					<tr><td>Tag</td><td class="left">Prerequisite</td><td class="left">Properties</td></tr>
+				</thead>
+				<tr><td><i>1st Tier (base cost: 100gp)</i></td><td></td><td></td></tr>
+				<tr><td>Full choke</td><td class="left">A shotgun</td><td class="left">The normal range and long range of this weapon are doubled.</td></tr>
+				<tr><td>Hair trigger</td><td class="left">Any firearm</td><td class="left">You can add your proficiency bonus to your initiative rolls. If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in the combat.</td></tr>
+				<tr><td>Long barrel</td><td class="left">Any firearm</td><td class="left">You gain a +1 bonus to damage rolls made with this weapon.</td></tr>
+				<tr><td>Runic</td><td class="left">Can only be applied by a runesmith.</td><td class="left">A runestone can be affixed to this weapon.</td></tr>
+				<tr><td>Silvered</td><td class="left">Any firearm</td><td class="left">Attacks with this weapon count as silvered for the purposes of overcoming resistance and immunity to nonmagical attacks and damage.</td></tr>
+				<tr><td>Threaded barrel</td><td class="left">Any firearm except sawed-off shotguns.</td><td class="left">A muzzle device can be attached to this weapon.</td></tr>
+				<tr><td><i>2nd Tier (base cost: 1000gp)</i></td><td></td><td></td></tr>
+				<tr><td>Arcane Optics</td><td class="left">Any firearm</td><td class="left">The lowest number you must roll on the d20 to score a critical hit with weapon is decreased by 1.</td></tr>
+				<tr><td>Magical</td><td class="left">A weapon with the <i>silvered</i> tag. Can only be applied by an arcane spellcaster</td><td class="left">ttacks with this weapon count as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage, and for traits and features such as a black pudding’s <i>corrosive form</i></td></tr>
+				<tr><td>Rifling</td><td class="left">A pistol with the <i>long barrel</i> tag.</td><td class="left">The damage die of this weapon is increased by one size.</td></tr>
+				<tr><td><i>3rd Tier (base cost: 10000gp)</i></td><td></td><td></td></tr>
+				<tr><td>Masterwork</td><td class="left">A firearm with the <i>arcane optics</i> tag.</td><td class="left">You gain an additional +1 bonus to attack and damage rolls made with this weapon.</td></tr>
+				
+			</table>
+			<table>
+				<thead>
+					<tr><td>Muzzle Devices</td><td class="right">Cost</td><td class="left">Prerequisite</td><td class="left">Properties</td></tr>
+				</thead>
+				<tr><td>Duckbill spreader</td><td>100 gp</td><td class="left">A shotgun</td><td class="left">Attacks with this weapon deal 1d4 damage to creatures within 5 feet of the target on a hit.</td></tr>
+				<tr><td>Flash hider</td><td>100 gp</td><td class="left">A rifle</td><td class="left">When you are hidden and miss with a ranged weapon attack using this weapon, making the attack doesn’t give away your location.</td></tr>
+				<tr><td>Muzzle brake</td><td>100 gp</td><td class="left">Any firearm</td><td class="left">You gain a +1 bonus to attack rolls made with this weapon.</td></tr>
+				<tr><td>Suppressor</td><td>300 gp</td><td class="left">A pistol or a rifle</td><td class="left">You gain a +1 bonus to attack rolls made with this weapon. In addition, this weapon loses the loud property.</td></tr>
+				
+			</table>
+		</description>
+	</element>
+	
+	
+	
+	
+	<!-- Properties -->
+	<!-- Kick -->
+	<element name="Kick" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_KICK">
+		<description>
+			<p>This weapon can be used with one or two hands.  You have disadvantage on ranged attack rolls when using it with one hand unless your stength score is equal to or higher than the weapon's kick score.</p>
+		</description>
+	</element>
+	<element name="Kick 12" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_KICK12">
+		<description>
+			<p>This weapon has disadvantage on ranged attack rolls when using one hand unless your strength score is 12 or higher.</p>
+			<div element="ID_HEAVYARMS_WEAPON_PROPERTY_KICK" />
+		</description>
+	</element>
+	<element name="Kick 14" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_KICK14">
+		<description>
+			<p>This weapon has disadvantage on ranged attack rolls when using one hand unless your strength score is 14 or higher.</p>
+			<div element="ID_HEAVYARMS_WEAPON_PROPERTY_KICK" />
+		</description>
+	</element>
+	
+	<!-- Loud -->
+	<element name="Loud" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_LOUD">
+		<description>
+			<p>Attacks with this weapon emit a piercing crack, audible out to 300 feet.</p>
+		</description>
+	</element>
+	
+	<!-- Pocket -->
+	<element name="Pocket" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_POCKET">
+		<description>
+			<p>You have advantage on Dexterity (Sleight of Hand) checks to conceal this weapon.</p>
+		</description>
+	</element>
+	
+	<!-- Reload -->
+	<element name="Reload" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD">
+		<description>
+			<p>The weapon can be fired a number of times equal to its Reload score before you must spend 1 action or bonus action to reload. You must have one free hand to reload a firearm.</p>
+		</description>
+	</element>
+	<element name="Reload 2" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2">
+		<description>
+			<p>This weapon needs to be reloaded after 2 shots.</p>
+			<div element="ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+	<element name="Reload 6" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6">
+		<description>
+			<p>This weapon needs to be reloaded after 6 shots.</p>
+			<div element="ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+	
+	<element name="Special (Shotgun)" type="Weapon Property" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SPECIAL_SHOTGUN">
+		<description>
+			<p><b>Shotgun.</b>  The damage of a shotgun increases to 1d12 when attacking a target within 10 feet of you.</p>
+		</description>
+	</element>
+	
+	<!-- Proficiencies) -->
+	<element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON" />
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM" />
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING" />
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING" />
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF" />
+			
+			<!-- Uncomment to add proficiencies for modified firearms 
+				 Modifications NOT Supported:
+					- Silvered
+					- Threaded Barrel
+					- Arcane Optics
+					- Magical
+					- Rifling
+					- Masterwork
+					- All Muzzle Devices
+			-->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_ARCANE_OPTICS" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_THREADED_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_LONG_BARREL" /> -->			
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_LONG_BARREL" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER" /> -->
+			<!-- <grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL" /> -->
+		</rules>
+	</element>
+	
+</elements>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<element name="Preacher" type="Archetype" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_PREACHER">
+		<supports>Gunslinger Trail</supports>
+		<description>
+			<p><i>"Why, you look like somebody just walked over your grave."</i></p>
+			<p>Whatever the raiment, symbols, and ceremonies of their faith, firearms are but divine implements in the preacher's holy arsenal.  Faith is their greatest weapon, dovotion their greatest strength.  As enigmatic as the gods they serve, the preacher gives life with one hand tand takes it away with the other.</p>
+			<p class="indent">At your option, you can use the Motivations table to help discover the reason for your character choosing to follow the preacher's path:</p>
+			<h5>Motivations</h5>
+				<table>
+					<thead>
+						<tr><td>d4</td><td>Motivation</td></tr>
+					</thead>
+					<tr><td>1</td><td>You're following in the footsteps of a guardian or mentor.</td></tr>
+					<tr><td>2</td><td>You made a promise to someone you hold dear.</td></tr>
+					<tr><td>3</td><td>You witnessed a miracle.</td></tr>
+					<tr><td>4</td><td>You seek atonement for a life of drinking and wickedness.</td></tr>						
+				</table>
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_MAN_OF_THE_CLOTH" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_SACRIFICE" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_STRENGTH_OF_SPIRIT" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_CLEANSE" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_REVITALIZE" />
+			
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_MAN_OF_THE_CLOTH" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_SACRIFICE" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_STRENGTH_OF_SPIRIT" level="6" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_CLEANSE" level="10" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_REVITALIZE" level="17" />
+
+		</rules>
+	</element>
+
+	<element name="Man Of The Cloth" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_MAN_OF_THE_CLOTH">
+		<description>
+			<p><i>3rd Level Preacher Class Feature</i></p>
+			<p>You have proven yourself worthy to take your god's holy vows.  You gain proficiency in the Religion skill.  If you already have this proficiency you gain proficiency in one skill from the gunslinger skill list.</p>
+			<p class="indent">In addition, you learn two cantrips of your choice from the cleric spell list.  Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Religion skill.  If you already have this proficiency you gain proficiency in one skill from the gunslinger skill list.
+			In addition, you learn two cantrips of your choice from the cleric spell list.  Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_PROFICIENCY_SKILL_RELIGION" requirements="!ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Proficiency" name="Skill Proficiency, Gunslinger" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_PERSUASION" requirements="ID_PROFICIENCY_SKILL_RELIGION"/>
+			<select type="Spell" name="Cantrip (Preacher)" supports="0,Cleric" number="2" />
+		</rules>
+	</element>
+
+	<element name="Sacrifice" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_SACRIFICE">
+		<description>
+			<p><i>3rd Level Preacher Class Feature</i></p>
+			<p>Through the ardency of your faith, you can heal others at a cost to yourself.  When you use your Buck Up, you can choose another creature within 60 feet of you that you can see to regain hit points instead of you.  For each Hit Die spent, roll the die and add your Wisdom modifier to it.  The target regains hit points equal to the total (minimum of 1 hit point).  This feature has no effect on constructs or undead.</p>
+		</description>
+		<sheet>
+			<description>When you use your Buck Up, you can choose another creature within 60 feet of you that you can see to regain hit points instead of you.  For each Hit Die spent, roll the die and add your Wisdom modifier to it.  The target regains hit points equal to the total (minimum of 1 hit point).  This feature has no effect on constructs or undead.</description>
+		</sheet>
+	</element>
+
+	<element name="Strength Of Spirit" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_STRENGTH_OF_SPIRIT">
+		<description>
+			<p><i>6th Level Preacher Class Feature</i></p>
+			<p>Your unwavering resolve is a balm to your spirit.  At the end of a long rest, you regain all spent Hit Dice, instead of up to half your total number of them.</p>
+		</description>
+		<sheet>
+			<description>At the end of a long rest, you regain all spent Hit Dice, instead of up to half your total number of them.</description>
+		</sheet>
+	</element>
+
+	<element name="Cleanse" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_CLEANSE">
+		<description>
+			<p><i>10th Level Preacher Class Feature</i></p>
+			<p>Whenever you restore hit points to a creature using your Buck Up or your Sacrifice, it also ends the blinded, deafened, and poisoned conditions on the target, and cures any diseases or poison affecting it.</p>
+		</description>
+		<sheet>
+			<description>Whenever you restore hit points to a creature using your Buck Up or your Sacrifice, it also ends the blinded, deafened, and poisoned conditions on the target, and cures any diseases or poison affecting it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Revitalize" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_REVITALIZE">
+		<description>
+			<p><i>17th Level Preacher Class Feature</i></p>
+			<p>You can target a creature that has been dead for no longer than one minute with your Sacrifice.  When you do so, the target returns to life if its soul is free and willing, regaining the hit points from Sacrifice normally.  This ability can't restore to life a creature that has died of old age or is a construct or an undead, nor can it restore any missing body parts.  A creature can be returned to life in this way no more than once between long rests.</p>
+		</description>
+		<sheet>
+			<description>You can target a creature that has been dead for no longer than one minute with your Sacrifice.  When you do so, the target returns to life if its soul is free and willing, regaining the hit points from Sacrifice normally.  This ability can't restore to life a creature that has died of old age or is a construct or an undead, nor can it restore any missing body parts.  A creature can be returned to life in this way no more than once between long rests.</description>
+		</sheet>
+	</element>
+	
+	
+
+</elements>

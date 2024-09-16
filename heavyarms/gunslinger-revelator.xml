@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<element name="Revelator" type="Archetype" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_REVELATOR">
+		<supports>Gunslinger Trail</supports>
+		<description>
+			<p><i>"Sometimes it takes a devil to kill a devil."</i></p>
+			<p>The revelator is the shield of the innocent and the sword of the just, seeking to uphold the law and punish the wicked.  While some join organizations dedicated to eradicating evil, earning a rank and title from their order, others work alone, waging a more personal war, seeking to avenge a great wrong, or defeat a terrible evil.  No matter the method, no matter the reason, all are driven to a righteous cause.  Where injustice persists, where iniquity dwells, the revelator comes.</p>
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_PATH_OF_THE_RIGHTEOUS" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_CONSECRATE_ARMS" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_BAPTISM_OF_FIRE" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_DEAD_RECKONING" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_SPIRIT_SHACKLES" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_ASHES_TO_ASHES" />
+			
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_PATH_OF_THE_RIGHTEOUS" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_CONSECRATE_ARMS" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BAPTISM_OF_FIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_DEAD_RECKONING" level="6" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_SPIRIT_SHACKLES" level="10" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_ASHES_TO_ASHES" level="17" />
+
+		</rules>
+	</element>
+
+	<element name="Path of the Righteous" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_PATH_OF_THE_RIGHTEOUS">
+		<description>
+			<p><i>3rd Level Revelator Class Feature</i></p>
+			<p>You arm yourself with knowledge of evil and its crooked ways.  You gain proficiency in one of the following skills of your choice: Arcana, History, or Religion.  You proficiency bonus is doubled for any Intelligence check you make to recall information about fiends or undead.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in one of the following skills of your choice: Arcana, History, or Religion.  You proficiency bonus is doubled for any Intelligence check you make to recall information about fiends or undead.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Gunslinger" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_RELIGION"/>
+		</rules>
+	</element>
+
+	<element name="Consecrate Arms" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_CONSECRATE_ARMS">
+		<description>
+			<p><i>3rd Level Revelator Class Feature</i></p>
+			<p>As an action, you can touch a willing creature and utter a prayer to sanctify it.  Whenever that creature hits with a weapon attack, the attack deals radiant damage instead of the weapon's normal damage type.  This benefit lasts until the creature dismisses it (no action required), the creature dies, or it finishes a short or long rest.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, you can touch a willing creature and utter a prayer to sanctify it.  Whenever that creature hits with a weapon attack, the attack deals radiant damage instead of the weapon's normal damage type.  This benefit lasts until the creature dismisses it (no action required), the creature dies, or it finishes a short or long rest.
+			You can use this features {{consecrate-arms-number}} times per Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="consecrate-arms-number" value="wisdom:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Baptism Of Fire" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BAPTISM_OF_FIRE">
+		<description>
+			<p><i>3rd Level Revelator Class Feature</i></p>
+			<p>With holy fire you deliver judgement unto your enemies.  When you hit a creature with a ranged weapon attack while benefiting from your Consecrate Arms, you can spend 1 grit-point to deal 1d8 radiant damage to the target, in addition to the weapon's damage.  The damage increases by 1d8 if the target is a fiend or an undead.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a ranged weapon attack while benefiting from your Consecrate Arms, you can spend 1 grit-point to deal 1d8 radiant damage to the target, in addition to the weapon's damage.  The damage increases by 1d8 if the target is a fiend or an undead.</description>
+		</sheet>
+	</element>
+
+	
+	<element name="Dead Reckoning" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_DEAD_RECKONING">
+		<description>
+			<p><i>6th Level Revelator Class Feature</i></p>
+			<p>You develop a keen instinct for the presence or influence of outsiders and undead.  You are always under the effects of a <i>detect evil and good</i> spell, and you know when you are in the lair of an aberration, celestial, elemental, fey, fiend, or undead.</p>
+		</description>
+		<sheet>
+			<description>You are always under the effects of a <i>detect evil and good</i> spell, and you know when you are in the lair of an aberration, celestial, elemental, fey, fiend, or undead.</description>
+		</sheet>
+	</element>
+
+	<element name="Spirit Shackles" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_SPIRIT_SHACKLES">
+		<description>
+			<p><i>10th Level Revelator Class Feature</i></p>
+			<p>When a creature you can see within 60 feet of you attempts to travel using teleportaion or by extradimensional or interplanar means, you can spend 1 grit point as a reaction to force that creature to make a Charisma saving throw (DC equal to 8 + your Proficiency Bonus + your Wisdom modifier).  On a failed save, the attempt at travel fails and is wasted.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see within 60 feet of you attempts to travel using teleportaion or by extradimensional or interplanar means, you can spend 1 grit point as a reaction to force that creature to make a Charisma saving throw DC {{spirit-shackles:dc}}.  On a failed save, the attempt at travel fails and is wasted.</description>
+		</sheet>
+		<rules>
+			<stat name="spirit-shackles:dc" value="8" />
+			<stat name="spirit-shackles:dc" value="proficiency" />
+			<stat name="spirit-shackles:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Ashes To Ashes" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_ASHES_TO_ASHES">
+		<description>
+			<p><i>17th Level Revelator Class Feature</i></p>
+			<p>Whenever you hit a fiend or an undead with a weapon attack while benefiting from your Consecrate Arms, the target is instantly destroyed if the attack reduces it to 50 hit points or <i>fewer</i>.</p>
+		</description>
+		<sheet>
+			<description>Whenever you hit a fiend or an undead with a weapon attack while benefiting from your Consecrate Arms, the target is instantly destroyed if the attack reduces it to 50 hit points or <i>fewer</i>.</description>
+		</sheet>
+	</element>	
+	
+
+</elements>

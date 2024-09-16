@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<!-- Feats -->
+	<element name="Bully" type="Feat" source="Heavyarms" id="ID_HEAVYARMS_FEAT_BULLY">
+		<description>
+			<p><i>Prerequisite: Proficiency with at least one firearm.</i></p>
+			<p>You are adept at using firearms in close quarters, gaining the following benefits:</p>
+			<ul>
+				<li>Being within 5 feet of a hositle creature doesn't impose disadvantage on your ranged attack rolls.</li>
+				<li>Once per turn, when you hit a creature within 10 feet of you with a ranged attack using a firearm, you can force the target to make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier).  On a failed save, you push the target 5 feet away from you and knock it prone.</li>
+			</ul>			
+		</description>
+		<sheet>
+			<description>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.
+			Once per turn, when you hit a creature within 10 feet of you with a ranged attack using a firearm, you can force the target to make a Strength saving throw DC {{bully:dc}}.  On a failed save, you push the target 5 feet away from you and knock it prone.</description>
+		</sheet>
+		<rules>
+			<stat name="bully:dc" value="8" />
+			<stat name="bully:dc" value="proficiency" />
+			<stat name="bully:dc" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Marksman" type="Feat" source="Heavyarms" id="ID_HEAVYARMS_FEAT_MARKSMAN">
+		<description>
+			<p>You are an expert at hitting your mark with ranged weapons, gaining the following benefits:</p>
+			<ul>
+				<li>Being prone doesn't impose disadvantage on your ranged weapon attacks.</li>
+				<li>Attacking a prone target doesn't impose disadvantage on your ranged weapon attack rolls if the target is within your weapon's normal range.</li>
+				<li>If you haven't moved since the start of your turn, you can use a bonus action to steady your aim.  Until the end of your next turn, you have advantage on the next ranged weapon attack roll you make.  This effect ends early if you move or take damage.</li>
+			</ul>			
+		</description>
+		<sheet>
+			<description>Being prone doesn't impose disadvantage on your ranged weapon attacks.
+			Attacking a prone target doesn't impose disadvantage on your ranged weapon attack rolls if the target is within your weapon's normal range.
+			If you haven't moved since the start of your turn, you can use a bonus action to steady your aim.  Until the end of your next turn, you have advantage on the next ranged weapon attack roll you make.  This effect ends early if you move or take damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pistolero" type="Feat" source="Heavyarms" id="ID_HEAVYARMS_FEAT_PISTOLERO">
+		<description>
+			<p><i>Prerequisite: Proficiency with at least one firearm.</i></p>
+			<p>Your speed and skill with a six-gun is unmatched.  You gain the following benefits.</p>
+			<ul>
+				<li>When you take the Attack action and attack with a one handed weapon, you can use a bonus action to attack with a pistol you are holding in the other hand.</li>
+				<li>If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you attack with a pistol before doing anything else on that turn.</li>
+			</ul>			
+		</description>
+		<sheet>
+			<description>When you take the Attack action and attack with a one handed weapon, you can use a bonus action to attack with a pistol you are holding in the other hand.
+			If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you attack with a pistol before doing anything else on that turn.</description>
+		</sheet>
+	</element>
+	
+	<!-- Modified Feats -->
+	<element name="Gunner (Heavyarms)" type="Feat" source="Heavyarms" id="ID_HEAVYARMS_FEAT_GUNNER">
+		<description>
+			<p><i>The standard Gunner feat with support for Heavyarms firearms.</i></p>
+			<p>You have a quick hand and keen eye when employing firearms, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with firearms (see “Firearms” in the <i>Dungeon Master’s Guide</i>).</li>
+				<li>You ignore the loading property of firearms.</li>
+				<li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You ignore the loading property of firearms. Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+			<grant type="Proficiency" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
+	</element>
+
+</elements>

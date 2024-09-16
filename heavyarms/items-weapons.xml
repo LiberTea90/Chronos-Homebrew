@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	
+<!--  
+	Modified firearms can be uncommented individually to add them to the item list.
+	Modifications NOT Supported:
+		- Silvered
+		- Threaded Barrel
+		- Arcane Optics
+		- Magical
+		- Rifling
+		- Masterwork
+		- All Muzzle Devices
+-->
+	
+	<!-- Firearms -->
+	<!-- Pistols -->
+	<!-- Pistol, Hand Cannon -->
+	<element name="Pistol, hand cannon" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_HAND_CANNON">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_HAND_CANNON, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK12, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">85</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Pistol, hand cannon)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON">
+	</element>
+	
+	<!-- Pistol, sidearm -->
+	<element name="Pistol, sidearm" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_SIDEARM">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SIDEARM, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_POCKET, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="3">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Pistol, sidearm)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM">
+	</element>
+	
+	<!-- Rifles -->
+	<!-- Rifle, repeating -->
+	<element name="Rifle, repeating" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_RIFLE_REPEATING">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_RIFLE, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">90</set>
+			<set name="weight" lb="3">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/450</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Rifle, repeating)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING">
+	</element>
+	
+	<!-- Shotguns -->
+	<!-- Shotgun, repeating -->
+	<element name="Shotgun, repeating" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_HEAVYARMS_WEAPON_SPECIAL_SHOTGUN, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+			<div element="ID_HEAVYARMS_WEAPON_SPECIAL_SHOTGUN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">140</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/30</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING">
+	</element>
+	
+	<!-- Shotgun, sawed-off -->
+	<element name="Shotgun, sawed-off" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_HEAVYARMS_WEAPON_SPECIAL_SHOTGUN</supports>
+		<description>
+			<p></p>
+			<div element="ID_HEAVYARMS_WEAPON_SPECIAL_SHOTGUN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">85</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">10/20</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF">
+	</element>
+	
+		<!-- Magic Firearms -->
+	<element name="Ace of Spades" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_ACE_OF_SPADES">
+		<description>
+			<p><i>Weapon (hand cannon), very rare, requires attunement</i></p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Firefly.</b> When you kill a hostile creature with a critical hit using this weapon the target explodes in a sudden conflagration, as if a fireball spell (save DC 10 + Your Proficiency Bonus) were cast centered on it.</p>
+			<p><i>Inscription: "Read 'em and weep"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">hand cannon</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="hand cannon">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_HAND_CANNON</set>
+		</setters>
+	</element>
+	
+	<element name="Bad Juju" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_BAD_JUJU">
+		<description>
+			<p><i>Weapon (any firearm),rare, requires attunement</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Ghostbuster.</b> While holding this weapon, you can see into the Ethereal Plane within 60 feet of you.  Furthermore, attacks with this weapon can hit targets on the Ethereal Plane.</p>
+			<p><i>Inscription: "Read 'em and weep"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="firearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+		</setters>
+	</element>
+	
+	<element name="Boomstick" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_BOOMSTICK">
+		<description>
+			<p><i>Weapon (any shotgun),rare, requires attunement</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Fireball.</b> While you are holding this weapon, you can use your action to cast the fireball spell (save DC 10 + Your Proficiency Bonus) from it.  Once used this property can't be used again until the following dawn.</p>
+			<p><i>Inscription: "Shop smart."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">shotgun</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shotgun">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN</set>
+		</setters>
+	</element>
+	
+	<element name="Borealis" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_BOREALIS">
+		<description>
+			<p><i>Weapon (any rifle),uncommon, requires attunement</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Prism.</b> While you are holding this weapon you can take a bonus action to change its damage type to acid, cold, fire, lightning, or poison.  This effect lasts until you use this feature again or you dismiss it as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rifle">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_RIFLE</set>
+		</setters>
+	</element>
+	
+	<element name="Good Medicine" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_GOOD_MEDICINE">
+		<description>
+			<p><i>Weapon (any firearm),rare, requires attunement</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>When you score a critical hit with this weapon during combat, you can forgo rolling any number of additional damage dice granted by your Bad Medicine feature. When you do so, choose another creature within 10 feet of the original target and roll the forgone dice. The chosen creature regains hit points equal to the result + your Wisdom modifier (minimum of 1 hit point). This property has no effect on Constructs or Undead.</p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="firearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+		</setters>
+	</element>
+	
+	<element name="Iconoclast" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_ICONOCLAST">
+		<description>
+			<p><i>Weapon (any firearm),very rare, requires attunement</i></p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Kingslayer</b> When you score a critical hit against a creature that has the Legendary Resistance trait with this weapon, that trait is suppressed until the end of your next turn.</p>
+			<p><i>Inscription: "If it ain't broke, break it."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="firearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+		</setters>
+	</element>
+	
+	<element name="Lawgiver" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_LAWGIVER">
+		<description>
+			<p><i>Weapon (hand cannon), rare, requires attunement by a creature of lawful alignment</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon</p>
+			<p><b>Death Sentence.</b> If a creature that isn't attuned to this weapon attempts to make an attack with it, the weapon casts the Disintegrate spell (save DC 10 + that Creature's Proficiency Bonus) on that creature before the attack is made.</p>
+		</description>
+		<setters>
+			<set name="keywords">hand cannon</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="hand cannon">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_HAND_CANNON</set>
+		</setters>
+	</element>
+	
+	<element name="Little Rascal" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_LITTLE_RASCAL">
+		<description>
+			<p><i>Weapon (sidearm), uncommon, requires attunement</i></p>
+			<p><b>Underdog.</b> When you hit a Large or larger creature with an attack using this weapon, the target takes an additional 1d6 damage of the weapon's type.</p>
+		</description>
+		<setters>
+			<set name="keywords">sidearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="sidearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_SIDEARM</set>
+		</setters>
+	</element>
+	
+	<element name="Old Faithful" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_OLD_FAITHFUL">
+		<description>
+			<p><i>Weapon (any firearm), uncommon, requires attunement</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Sureshot.</b> You ignore the loading and reload properties of this weapon.</p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="firearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+		</setters>
+	</element>
+	
+	<element name="Pilgrim's Path" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_PILGRIMS_PATH">
+		<description>
+			<p><i>Weapon (any firearm), very rare, requires attunement by a gunslinger</i></p>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.  Whenever you score a critical hit with this weapon you can regain 2 expended Grit Points instead of 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="firearm">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+		</setters>
+	</element>
+	
+	<element name="Show Stopper" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_SHOW_STOPPER">
+		<description>
+			<p><i>Weapon (any shotgun),legendary, requires attunement</i></p>
+			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Curtain Call.</b> When you score a critical hit with this weapon the target must succeed on a Constitution saving throw (DC 10 + Your Proficiency Bonus) or be reduced to 0 hit points.</p>
+			<p><i>Inscription: "Show's over"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shotgun">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN</set>
+		</setters>
+	</element>
+	
+	<element name="The Long View" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_THE_LONG_VIEW">
+		<description>
+			<p><i>Weapon (any rifle),uncommon, requires attunement</i></p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Hawkeye.</b> Attacking at long range doesn't impose disadvantage on your ranged attack rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rifle">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_RIFLE</set>
+		</setters>
+	</element>
+	
+	<!-- Runestones -->
+	<!-- Hawkeye -->
+	<element name="Hawkeye Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_HAWKEYE_RUNESTONE">
+		<description>
+			<p><i>Runestone, common</i></p>
+			<p><b>Hawkeye.</b> Attacking at long range doesn't impose disadvantage on your ranged attack rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Hawkeye Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Prism -->
+	<element name="Prism Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_PRISM_RUNESTONE">
+		<description>
+			<p><i>Runestone, Uncommon</i></p>
+			<p><b>Prism.</b> While you are holding this weapon you can take a bonus action to change its damage type to acid, cold, fire, lightning, or poison.  This effect lasts until you use this feature again or you dismiss it as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Prism Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Sureshot -->
+	<element name="Sureshot Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_SURESHOT_RUNESTONE">
+		<description>
+			<p><i>Runestone, Uncommon</i></p>
+			<p><b>Sureshot.</b> You ignore the loading and reload properties of this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Sureshot Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Underdog -->
+	<element name="Underdog Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_UNDERDOG_RUNESTONE">
+		<description>
+			<p><i>Runestone, Uncommon</i></p>
+			<p><b>Underdog.</b> When you hit a Large or larger creature with an attack using this weapon, the target takes an additional 1d6 damage of the weapon's type.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Underdog Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Death Sentence -->
+	<element name="Death Sentence Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_DEATH_SENTENCE_RUNESTONE">
+		<description>
+			<p><i>Runestone, Rare</i></p>
+			<p><b>Death Sentence.</b> If a creature that isn't attuned to this weapon attempts to make an attack with it, the weapon casts the Disintegrate spell (save DC 10 + that Creature's Proficiency Bonus) on that creature before the attack is made.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Death Sentence Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Fireball -->
+	<element name="Fireball Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_FIREBALL_RUNESTONE">
+		<description>
+			<p><i>Runestone, Rare</i></p>
+			<p><b>Fireball.</b> While you are holding this weapon, you can use your action to cast the fireball spell (save DC 10 + Your Proficiency Bonus) from it.  Once used this property can't be used again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Fireball Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Ghostbuster -->
+	<element name="Ghostbuster Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_GHOSTBUSTER_RUNESTONE">
+		<description>
+			<p><i>Runestone, Rare</i></p>
+			<p><b>Ghostbuster.</b> While holding this weapon, you can see into the Ethereal Plane within 60 feet of you.  Furthermore, attacks with this weapon can hit targets on the Ethereal Plane.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Ghostbuster Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Firefly -->
+	<element name="Firefly Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_FIREFLY_RUNESTONE">
+		<description>
+			<p><i>Runestone, Very Rare</i></p>
+			<p><b>Firefly.</b> When you kill a hostile creature with a critical hit using this weapon the target explodes in a sudden conflagration, as if a fireball spell (save DC 10 + Your Proficiency Bonus) were cast centered on it.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Firefly Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Kingslayer -->
+	<element name="Kingslayer Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_KINGSLAYER_RUNESTONE">
+		<description>
+			<p><i>Runestone, Very Rare</i></p>
+			<p><b>Kingslayer</b> When you score a critical hit against a creature that has the Legendary Resistance trait with this weapon, that trait is suppressed until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Kingslayer Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Curtain Call -->
+	<element name="Curtain Call Runestone" type="Magic Item" source="Heavyarms" id="ID_HEAVYARMS_MAGIC_ITEM_CURTAIN_CALL_RUNESTONE">
+		<description>
+			<p><i>Runestone, Legendary</i></p>
+			<p><b>Curtain Call.</b> When you score a critical hit with this weapon the target must succeed on a Constitution saving throw (DC 10 + Your Proficiency Bonus) or be reduced to 0 hit points.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM</set>
+			<set name="name-format">{{parent}}, Curtain Call Runestone</set>
+		</setters>
+	</element>
+	
+	<!-- Ammunition -->
+	<!-- Rounds -->
+	<element name="Rounds (20)" type="Item" source="Heavyarms" id="ID_HEAVYARMS_ITEM_ROUND">
+		<description>
+			<p>The standard ammunition used by Pistols and Rifles.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="0.2">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<!-- Shotshells -->
+	<element name="Shotshells (20)" type="Item" source="Heavyarms" id="ID_HEAVYARMS_ITEM_SHOTSHELLS">
+		<description>
+			<p>The standard ammunition used by Shotguns.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="0.2">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<!-- Heat Seekers -->
+	<element name="Heat Seekers (20)" type="Item" source="Heavyarms" id="ID_HEAVYARMS_ITEM_HEAT_SEEKERS">
+		<description>
+			<p><b>Heat Seeker.</b> When you attack a creature that isn’t a Construct or an Undead using this ammunition, you gain a +1 bonus to the attack roll, and the target gains no benefit from cover for the attack.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.2">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<!-- Incendiary -->
+	<element name="Incendiary (20)" type="Item" source="Heavyarms" id="ID_HEAVYARMS_ITEM_INCENDIARY">
+		<description>
+			<p><b>Incendiary.</b> Attacks using this ammunition that hit deal fire damage instead of the weapon’s normal damage type, cause the target to start burning (1d6), and ignite flammable objects that aren’t being worn or carried.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="0.2">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<!-- Modified Firearms -->
+	<!-- Pistol, Hand Cannon, Long Barrel -->
+	<!-- <element name="Pistol, hand cannon, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_HAND_CANNON_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_HAND_CANNON, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK12, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Pistol, hand cannon, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_PISTOL_HAND_CANNON_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Pistol, hand cannon, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_LONG_BARREL">
+	</element> -->
+	
+	<!-- Pistol, Hand Cannon, Hair Trigger -->
+	<!-- <element name="Pistol, hand cannon, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_HAND_CANNON, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK12, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Pistol, hand cannon, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Pistol, Hand Cannon, Hair Trigger, Long Barrel -->
+<!-- 	<element name="Pistol, hand cannon, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_HAND_CANNON, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK12, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/180</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Pistol, hand cannon, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Pistol, hand cannon, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_HAND_CANNON_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+	<!-- Pistol, sidearm, long barrel -->
+	<!-- <element name="Pistol, sidearm, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_SIDEARM_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SIDEARM, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_POCKET, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Pistol, sidearm, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_PISTOL_SIDEARM_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Pistol, sidearm, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_LONG_BARREL">
+	</element> -->
+	
+	<!-- Pistol, sidearm, hair trigger -->
+	<!-- <element name="Pistol, sidearm, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SIDEARM, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_POCKET, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Pistol, sidearm, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Pistol, sidearm, hair trigger, long barrel -->
+	<!-- <element name="Pistol, sidearm, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SIDEARM, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_POCKET, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Pistol, sidearm, hair trigger, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Pistol, sidearm, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_PISTOL_SIDEARM_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+	<!-- Rifle, repeating, long barrel -->
+	<!-- <element name="Rifle, repeating, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_RIFLE_REPEATING_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_RIFLE, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/450</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Rifle, repeating, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_RIFLE_REPEATING_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Rifle, repeating, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_LONG_BARREL">
+	</element> -->
+	
+	<!-- Rifle, repeating, hair trigger -->
+	<!-- <element name="Rifle, repeating, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_RIFLE, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/450</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Rifle, repeating, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Rifle, repeating, hair trigger, long barrel -->
+	<!-- <element name="Rifle, repeating, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_RIFLE, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/450</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Rifle, repeating, hair trigger, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Rifle, repeating, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_RIFLE_REPEATING_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, repeating, long barrel -->
+	<!-- <element name="Shotgun, repeating, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/30</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, repeating, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, repeating, hair trigger -->
+	<!-- <element name="Shotgun, repeating, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/30</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Shotgun, repeating, hair trigger, long barrel -->
+<!-- 	<element name="Shotgun, repeating, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/30</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, repeating, hair trigger, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, repeating, full choke -->
+	<!-- <element name="Shotgun, repeating, full choke" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">40/60</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, full choke)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE">
+	</element> -->
+	
+	<!-- Shotgun, repeating, full choke, long barrel -->
+	<!-- <element name="Shotgun, repeating, full choke, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">40/60</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, repeating, full choke, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, full choke, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, repeating, full choke, hair trigger -->
+	<!-- <element name="Shotgun, repeating, full choke, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">40/60</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, full choke, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Shotgun, repeating, full choke, hair trigger, long barrel -->
+	<!-- <element name="Shotgun, repeating, full choke, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD6, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">40/60</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, repeating, full choke, hair trigger, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, repeating, full choke, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_REPEATING_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, long barrel -->
+	<!-- <element name="Shotgun, sawed-off, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">10/20</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, sawed-off, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, hair trigger -->
+	<!-- <element name="Shotgun, sawed-off, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">10/20</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, hair trigger, long barrel -->
+	<!-- <element name="Shotgun, sawed-off, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">10/20</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, sawed-off, hair trigger, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, full choke -->
+	<!-- <element name="Shotgun, sawed-off, full choke" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/40</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, full choke, long barrel -->
+	<!-- <element name="Shotgun, sawed-off, full choke, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/40</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, sawed-off, full choke, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_LONG_BARREL">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, full choke, hair trigger -->
+	<!-- <element name="Shotgun, sawed-off, full choke, hair trigger" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/40</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off, hair trigger)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER">
+	</element> -->
+	
+	<!-- Shotgun, sawed-off, full choke, hair trigger, long barrel -->
+	<!-- <element name="Shotgun, sawed-off, full choke, hair trigger, long barrel" type="Weapon" source="Heavyarms" id="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL">
+		<supports>ID_HEAVYARMS_WEAPON_CATEGORY_FIREARM, ID_HEAVYARMS_WEAPON_CATEGORY_SHOTGUN, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_HEAVYARMS_WEAPON_PROPERTY_KICK14, ID_HEAVYARMS_WEAPON_PROPERTY_LOUD, ID_HEAVYARMS_WEAPON_PROPERTY_RELOAD2, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+		<description>
+			<p><b>Hair Trigger.</b> You can add your proficiency bonus to your initiative rolls.  If you give yourself this benefit, you must make a ranged attack with this weapon before you move or take any other action in this combat.</p>
+			<p><b>Long Barrel.</b> You gain a +1 bonus to damage rolls made with this weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/40</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL</set>
+		</setters>
+		<rules>
+				<stat name="Shotgun, sawed-off, full choke, hair trigger, long barrel:damage" value="1" requirements="ID_HEAVYARMS_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL"/>
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Shotgun, sawed-off, hair trigger, long barrel)" type="Proficiency" source="Heavyarms" id="ID_HEAVYARMS_PROFICIENCY_WEAPON_SHOTGUN_SAWED_OFF_FULL_CHOKE_HAIR_TRIGGER_LONG_BARREL">
+	</element> -->
+	
+</elements>

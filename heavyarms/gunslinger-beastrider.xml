@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<element name="Beastrider" type="Archetype" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_BEASTRIDER">
+		<supports>Gunslinger Trail</supports>
+		<description>
+			<p><i>“If a dog is man’s best friend, then a gun and a horse are his most loyal servants.”</i></p>
+			<p>A beastrider is born to the saddle, capable of taming any beast and riding any mount. While any fool can jump on an old mare, it takes more than reins and spurs to master a spirited beast. Living life fast, both literally and figuratively, the beastrider knows freedom tastes better at a gallop, and a loyal companion is worth more than gold.</p>
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_TO_THE_MANOR_BORN" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_BRONCBUSTER" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_ROUGH_RIDER" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_RIDERS_REFLEXES" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_BLAZING_SADDLES" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_AIR_SUPERIORITY" />
+			
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_TO_THE_MANOR_BORN" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BRONCBUSTER" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_ROUGH_RIDER" level="6" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_RIDERS_REFLEXES" level="6" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BLAZING_SADDLES" level="10" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_AIR_SUPERIORITY" level="17" />
+
+		</rules>
+	</element>
+
+	<element name="To The Manor Born" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_TO_THE_MANOR_BORN">
+		<description>
+			<p><i>3rd Level Beastrider Class Feature</i></p>
+			<p>Whether through hard work or natural talent, you possess a level and breadth of skill few can match. You gain proficiency in two skills of your choice from the gunslinger skill list, one of which should be Animal Handling if you aren’t already proficient in it.</p>
+			<p class="indent">In addition, choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in two skills of your choice from the gunslinger skill list.
+			In addition, choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Gunslinger" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_PERSUASION" number="2"/>
+			<select type="Class Feature" name="Expertise (Gunslinger)" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+
+	<element name="Broncbuster" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BRONCBUSTER">
+		<description>
+			<p><i>3rd Level Beastrider Class Feature</i></p>
+			<p>As an action, you can touch a Beast that is at least one size larger than you and that has an appropriate anatomy to serve as a mount. It must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Wisdom modifier) or become charmed by you until you dismiss it, you use this feature to charm a different creature, or you die. While charmed in this way, the target is friendly to you and acts under your control while you are riding it. A creature that successfully saves against this effect is immune to it for 24 hours, after which time it can be affected again. A creature you are fighting automatically succeeds on the saving throw.</p>
+			<p class="indent">Your gunslinger level determines the range of beasts you can charm in this way, as shown in the Mounts table. At 3rd level, for example, you can attempt to charm any Beast that has a challenge rating of 1/2 or lower that doesn’t have a flying or swimming speed:</p>
+			<h5 class="caption">Mounts</h5>
+			<table>
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Max. CR</td><td class="col-5">Limitations</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>1/2</td><td>No flying or swimming speed</td></tr>
+				<tr><td>6th</td><td>1</td><td>No flying speed</td></tr>
+				<tr><td>10th</td><td>2</td><td>-</td></tr>
+				<tr><td>17th</td><td>-</td><td>-</td></tr>
+				
+			</table>
+		</description>
+		<sheet>
+			<description>As an action, you can touch a Beast that is at least one size larger than you and that has an appropriate anatomy to serve as a mount. It must succeed on a Wisdom saving throw DC {{broncbuster:dc}} or become charmed by you until you dismiss it, you use this feature to charm a different creature, or you die. While charmed in this way, the target is friendly to you and acts under your control while you are riding it. A creature that successfully saves against this effect is immune to it for 24 hours, after which time it can be affected again. A creature you are fighting automatically succeeds on the saving throw.
+			Your gunslinger level determines the range of beasts you can charm in this way, as shown in the Mounts table.</description>
+		</sheet>
+		<rules>
+			<stat name="broncbuster:dc" value="8" bonus="base" />
+			<stat name="broncbuster:dc" value="wisdom:modifier" />
+			<stat name="broncbuster:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	
+	<element name="Rough Rider" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_ROUGH_RIDER">
+		<description>
+			<p><i>6th Level Beastrider Class Feature</i></p>
+			<p>Whenever you take the Attack action, you can forgo one of the attacks from that action to command a mount you are controlling to use its action to make one weapon attack, choosing from those in its stat block</p>
+		</description>
+		<sheet>
+			<description>Whenever you take the Attack action, you can forgo one of the attacks from that action to command a mount you are controlling to use its action to make one weapon attack, choosing from those in its stat block</description>
+		</sheet>
+	</element>
+
+	<element name="Rider's Reflexes" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_RIDERS_REFLEXES">
+		<description>
+			<p><i>6th Level Beastrider Class Feature</i></p>
+			<p>When a creature you can see hits your mount with an attack, you can spend 1 grit point as a reaction to halve the attack’s damage against it.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see hits your mount with an attack, you can spend 1 grit point as a reaction to halve the attack’s damage against it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Blazing Saddles" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BLAZING_SADDLES">
+		<description>
+			<p><i>10th Level Beastrider Class Feature</i></p>
+			<p>While you are mounted and aren’t incapacitated, your mount ignores difficult terrain. Furthermore, whenever your mount takes the Dash action, it gains additional movement equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>While you are mounted and aren’t incapacitated, your mount ignores difficult terrain. Furthermore, whenever your mount takes the Dash action, it gains additional movement equal to your walking speed.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Air Superiority" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_AIR_SUPERIORITY">
+		<description>
+			<p><i>17th Level Beastrider Class Feature</i></p>
+			<p>Bestride your mount, you soar, you are the eagle. When you use your Covering Fire while flying, you can make one ranged weapon attack against the attacking creature as part of the same reaction, provided the target is within your weapon’s range.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you use your Covering Fire while flying, you can make one ranged weapon attack against the attacking creature as part of the same reaction, provided the target is within your weapon’s range.</description>
+		</sheet>
+	</element>
+	
+
+</elements>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<element name="Enforcer" type="Archetype" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ENFORCER">
+		<supports>Gunslinger Trail</supports>
+		<description>
+			<p><i>"Do I get my money now or after I've killed you?"</i></p>
+			<p>Even in bad company, enforcers have a reputation for giving as good as they get, shrugging off blow after blow and returning tenfold.  Yet it is not only their tenacity that makes them a valuable ally but also their keen insight; a knack for sniffing out the truth that is as dangerous to an adversary as any arms they can bring to bear.</p>
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_BLOODHOUND" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_DOUBLE_TOUGH" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_UNFORGIVEN" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_SHARP_EYE" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_HARD_CASE" />
+			<div element="ID_HEAVYARMS_ARCHETYPE_FEATURE_KING_OF_THE_HILL" />
+			
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BLOODHOUND" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_DOUBLE_TOUGH" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_UNFORGIVEN" level="3" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_SHARP_EYE" level="6" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_HARD_CASE" level="10" />
+			<grant type="Archetype Feature" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_KING_OF_THE_HILL" level="17" />
+		</rules>
+	</element>
+
+	<element name="Bloodhound" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_BLOODHOUND">
+		<description>
+			<p><i>3rd Level Enforcer Class Feature</i></p>
+			<p>You learn the telltale signs of dishonesty and evasiveness.</p>
+			<p>You gain proficiency in the Insight skill.  If you already have this proficiency, you gain proficiency in another skill of your choice from the gunslinger skill list.</p>
+			<p>Your proficiency bonus is doubled for any Wisdom (Insight) check you make to determine the motive or intent of a humanoid.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Insight skill.  If you already have this proficiency, you gain proficiency in another skill of your choice from the gunslinger skill list.
+			Your proficiency bonus is doubled for any Wisdom (Insight) check you make to determine the motive or intent of a humanoid.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Proficiency" name="Skill Proficiency, Gunslinger" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="ID_PROFICIENCY_SKILL_INSIGHT"/>
+		</rules>
+	</element>
+
+	<element name="Double Tough" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_DOUBLE_TOUGH">
+		<description>
+			<p><i>3rd Level Enforcer Class Feature</i></p>
+			<p>You know how to roll with the punches, so to speak.  Whenever you regain hit points during combat, you gain the same number of temporary hit points.  These temporary hit points last until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever you regain hit points during combat, you gain the same number of temporary hit points.  These temporary hit points last until the start of your next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Unforgiven" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_UNFORGIVEN">
+		<description>
+			<p><i>3rd Level Enforcer Class Feature</i></p>
+			<p>If your first attack on your turn hits a creature that attacked you or targeted you with a spell or other harmful effect since your last turn, you can roll one additional weapon damage die and add it to the damage of your attack.</p>
+		</description>
+		<sheet>
+			<description>If your first attack on your turn hits a creature that attacked you or targeted you with a spell or other harmful effect since your last turn, you can roll one additional weapon damage die and add it to the damage of your attack.</description>
+		</sheet>
+	</element>
+
+	
+	<element name="Sharp Eye" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_SHARP_EYE">
+		<description>
+			<p><i>6th Level Enforcer Class Feature</i></p>
+			<p>Experience and necessity have honed your ability to discern your surroundings at a glance.  You can take the Search action as a bonus action on your turn.</p>
+			<p>In addition, while you are resting, or you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</p>
+		</description>
+		<sheet>
+			<description>You can take the Search action as a bonus action on your turn.  
+			In addition, while you are resting, or you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</description>
+		</sheet>
+	</element>
+
+	<element name="Hard Case" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_HARD_CASE">
+		<description>
+			<p><i>10th Level Enforcer Class Feature</i></p>
+			<p>While you have temporary hit points, you can't be charmed or frightened.  Furthermore, when you use your Buck Up, you can make a saving throw to end one effect on yourself that is causing you to be charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>While you have temporary hit points, you can't be charmed or frightened.  Furthermore, when you use your Buck Up, you can make a saving throw to end one effect on yourself that is causing you to be charmed or frightened.</description>
+		</sheet>
+	</element>
+	
+	<element name="King Of The Hill" type="Archetype Feature" source="Heavyarms" id="ID_HEAVYARMS_ARCHETYPE_FEATURE_KING_OF_THE_HILL">
+		<description>
+			<p><i>17th Level Enforcer Class Feature</i></p>
+			<p>Once per turn, you can spend 1 grit point to use your Frontier Justice feature without using your reaction.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, you can spend 1 grit point to use your Frontier Justice feature without using your reaction.</description>
+		</sheet>
+	</element>
+	
+	
+
+</elements>
