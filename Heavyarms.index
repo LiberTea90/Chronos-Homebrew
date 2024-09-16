@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Heavyarms</name>
+		<update version="1.0.0">
+			<file name="Heavyarms.index" url="" />
+		</update>
+	</info>
+	<files>
+		<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/class-gunslinger.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/feats.xml" />
+		<file name="gunslinger-beastrider.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-beastrider.xml" />
+		<file name="gunslinger-enforcer.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-enforcer.xml" />
+		<file name="gunslinger-maverick.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-maverick.xml" />
+		<file name="gunslinger-preacher.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-preacher.xml" />
+		<file name="gunslinger-revelator.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/gunslinger-revelator.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/items-weapons.xml" />
+	</files>
+</index>
