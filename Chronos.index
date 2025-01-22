@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Chronos Homebrew</name>
-		<update version="1.5.1">
+		<update version="1.5.2">
 			<file name="Chronos.index" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos.index" />
 		</update>
 	</info>
