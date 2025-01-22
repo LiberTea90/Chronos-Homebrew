@@ -2,12 +2,43 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.2.5">
+		<update version="1.2.6">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
 	
 	<!-- Weapons -->
+	
+		<element name="Winter's Bane" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_WINTERS_BANE">
+		<description>
+			<p>This halberd is a magic weapon.  While attuned the wielder gains the following benefits:</p>
+			<p></p>
+			<ul>
+				<li>You gain a +1 to attack and damage rolls made with this magic weapon.</li>
+				<li>You have Resistance to Cold Damage.</li>
+				<li><b>Immolation Rune:</b> As a Bonus Action, an attuned creature can invoke the rune to change the weapon’s damage type to Fire instead of Slashing for 1 minute.  While the rune is invoked you gain Resistance to Fire Damage.</li>
+				<li><b>1 / Day:</b> An attuned creature may spend their Action to cast the “Wall of Fire” spell (Save DC 15) at base level without Material or Somatic components.</li>
+			</ul>
+			<div class="reference">
+					<div element="ID_PHB_SPELL_WALL_OF_FIRE" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">halberd</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Spear</set>
+			<set name="name-format">Winter's Bane</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	
 	<element name="Clockwork Battleaxe" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_CLOCKWORK_BATTLEAXE">
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
