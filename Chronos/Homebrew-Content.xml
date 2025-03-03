@@ -2,13 +2,146 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.2.6">
+		<update version="1.2.7">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
 	
 	<!-- Weapons -->
 	
+		<element name="ChargeBlade" type="Proficiency" source="Chronos Homebrew" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" />
+	
+			 <append id="ID_INTERNAL_GRANTS_CHARACTER_BASE">
+				<rules>
+					<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD,ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+				</rules>
+			</append>
+			
+			<element name="Charge Blade Axe" type="Weapon" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_WEAPON_COMMON_CHARGE_BLADE_AXE">
+				<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+				<description>
+				<p></p>
+					<p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
+				</description>
+				<setters>
+					<set name="category">Weapons</set>
+					<set name="cost" currency="gp">30</set>
+					<set name="weight" lb="7">7 lb.</set>
+					<set name="slot">twohand</set>
+					<set name="damage" type="slashing">1d12</set>
+					<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE</set>
+					<set name="attunement">false</set>
+					<set name="name-format">Charge Blade Axe</set>
+				</setters>
+			</element>
+			<element name="Charge Blade Sword" type="Weapon" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_WEAPON_COMMON_CHARGE_BLADE_SWORD">
+				<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+				<description>
+				<p></p>
+					<p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
+				</description>
+				<setters>
+					<set name="category">Weapons</set>
+					<set name="cost" currency="gp">30</set>
+					<set name="weight" lb="8">8 lb.</set>
+					<set name="slot">twohand</set>
+					<set name="damage" type="slashing">1d6</set>
+					<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE</set>
+					<set name="attunement">true</set>
+					<set name="name-format">Charge Blade Sword</set>
+				</setters>
+				<rules>
+					<stat name="ac:shield" value="2" bonus="shield" />
+				</rules>
+			</element>
+			<element name="Rare - Lightning (Axe)" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_RARE_LIGHTNING_CHARGE_BLADE_AXE">
+				<description>
+					<br />
+					<p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+					<p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
+					<p class="indent"><b>Phial Charge.</b> When you hit a creature with this weapon's sword and shield mode, it gains 1 phial charge up to a maximum of 5. The charges last until your next short or long rest.</p>
+					<p class="indent"><b>Elemental Guard (Sword).</b> As a reaction, when you are hit by an attack you can expend 1 phial to deal 1d4 lightning damage to the creature.</p>
+					<p class="indent"><b>Elemental Discharge (Axe).</b> As a bonus action upon hitting a creature, you can expend 1 phial to deal an extra 1d6 lightning damage).</p>
+					<p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of lightning damage in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d4 of lightning damage, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage.</p>
+				</description>
+				<setters>
+					<set name="category">Magic Weapons</set>
+					<set name="cost" currency="gp">0</set>
+					<set name="type" addition="common charge blade axe">Weapon</set>
+					<set name="rarity">Rare</set>
+					<set name="enhancement">1</set>
+					<set name="weapon">Charge Blade Axe</set>
+					<set name="attunement">false</set>
+					<set name="name-format">Rare - Lightning Charge Blade Axe</set>
+				</setters>
+			</element>
+			<element name="Rare - Lightning (Sword)" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_RARE_LIGHTNING_CHARGE_BLADE_SWORD">
+				<description>
+					<br />
+					<p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+					<p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
+					<p class="indent"><b>Phial Charge.</b> When you hit a creature with this weapon's sword and shield mode, it gains 1 phial charge up to a maximum of 5. The charges last until your next short or long rest.</p>
+					<p class="indent"><b>Elemental Guard (Sword).</b> As a reaction, when you are hit by an attack you can expend 1 phial to deal 1d4 lightning damage to the creature.</p>
+					<p class="indent"><b>Elemental Discharge (Axe).</b> As a bonus action upon hitting a creature, you can expend 1 phial to deal an extra 1d6 lightning damage).</p>
+					<p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of lightning damage in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d4 of lightning damage, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage.</p>
+				</description>
+				<setters>
+					<set name="category">Magic Weapons</set>
+					<set name="cost" currency="gp">0</set>
+					<set name="type" addition="common charge blade sword">Weapon</set>
+					<set name="rarity">Rare</set>
+					<set name="enhancement">1</set>
+					<set name="weapon">Charge Blade Sword</set>
+					<set name="attunement">true</set>
+					<set name="name-format">Rare - Lightning Charge Blade Sword</set>
+				</setters>
+			</element>
+			   <element name="Prototype - Lightning (Axe)" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_PROTOTYPE_LIGHTNING_CHARGE_BLADE_AXE">
+				<description>
+					<br />
+					<p><i>You gain a +2 bonus on attacks and damage rolls and the shield is a +1 Shield.</i></p>
+					<p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
+					<p class="indent"><b>Phial Charge.</b> When you hit a creature with this weapon's sword and shield mode, it gains 1 phial charge up to a maximum of 5. The charges last until your next short or long rest.</p>
+					<p class="indent"><b>Elemental Guard (Sword).</b> As a reaction, when you are hit by an attack you can expend 1 phial to deal 1d6 lightning damage to the creature.</p>
+					<p class="indent"><b>Elemental Discharge (Axe).</b> As a bonus action upon hitting a creature, you can expend 1 phial to deal an extra 1d8 lightning damage).</p>
+					<p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of lightning damage in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d6 of lightning damage, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage.</p>
+				</description>
+				<setters>
+					<set name="category">Magic Weapons</set>
+					<set name="cost" currency="gp">0</set>
+					<set name="type" addition="common charge blade axe">Weapon</set>
+					<set name="rarity">Very Rare</set>
+					<set name="enhancement">2</set>
+					<set name="weapon">Charge Blade Axe</set>
+					<set name="attunement">false</set>
+					<set name="name-format">Prototype - Lightning Charge Blade Axe</set>
+				</setters>
+			</element>
+			<element name="Prototype - Lightning (Sword)" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_PROTOTYPE_LIGHTNING_CHARGE_BLADE_SWORD">
+				<description>
+					<br />
+					<p><i>You gain a +2 bonus on attacks and damage rolls and the shield is a +1 Shield.</i></p>
+					<p class="indent"><b>Switch Mode.</b> As a bonus action, you can switch the weapon between its axe or sword and shield mode.</p>
+					<p class="indent"><b>Phial Charge.</b> When you hit a creature with this weapon's sword and shield mode, it gains 1 phial charge up to a maximum of 5. The charges last until your next short or long rest.</p>
+					<p class="indent"><b>Elemental Guard (Sword).</b> As a reaction, when you are hit by an attack you can expend 1 phial to deal 1d6 lightning damage to the creature.</p>
+					<p class="indent"><b>Elemental Discharge (Axe).</b> As a bonus action upon hitting a creature, you can expend 1 phial to deal an extra 1d8 lightning damage).</p>
+					<p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of lightning damage in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d6 of lightning damage, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage.</p>
+				</description>
+				<setters>
+					<set name="category">Magic Weapons</set>
+					<set name="cost" currency="gp">0</set>
+					<set name="type" addition="common charge blade sword">Weapon</set>
+					<set name="rarity">Very Rare</set>
+					<set name="enhancement">2</set>
+					<set name="weapon">Charge Blade Sword</set>
+					<set name="attunement">true</set>
+					<set name="name-format">Prototype - Lightning Charge Blade Sword</set>
+				</setters>
+				<rules>
+					<stat name="ac:shield" value="1" bonus="enhancement" />
+				</rules>
+		</element>
+		
 		<element name="Winter's Bane" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_WINTERS_BANE">
 		<description>
 			<p>This halberd is a magic weapon.  While attuned the wielder gains the following benefits:</p>
