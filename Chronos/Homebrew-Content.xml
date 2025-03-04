@@ -107,7 +107,7 @@
 					<p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of lightning damage in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d6 of lightning damage, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage.</p>
 					<p></p>
 					<p class="indent"><b>Defect.</b></p>
-					<p class="indent"><b>Prototype.</b> When expending charged phials either through <b>Elemental Guard</b>, <b>Elemental Discharge</b>, or <b>Amped Elemental Discharge</b> roll a d10.  On a 1 you take damage equal to half the damage dealt.</p>
+					<p class="indent"><b>Prototype.</b> When you expend phials to use <b>Amped Elemental Discharge</b> roll a d4.  On a 1 you take damage equal to half the damage dealt.</p>
 				</description>
 				<setters>
 					<set name="category">Magic Weapons</set>
@@ -131,7 +131,7 @@
 					<p class="indent"><b>Amped Element Discharge (Axe).</b> As an action you can expend any number of phial charges and release a shockwave of lightning damage in a 15- foot cone in front of you. Each creature in that area must succeed on a Dexterity saving throw equal to 8 + your proficiency modifier + your Strength modifier taking #d6 of lightning damage, where # is the number of phials you have expended on a failed save. On a successful save, the creature takes half as much damage.</p>
 					<p></p>
 					<p class="indent"><b>Defect.</b></p>
-					<p class="indent"><b>Prototype.</b> When expending charged phials either through <b>Elemental Guard</b>, <b>Elemental Discharge</b>, or <b>Amped Elemental Discharge</b> roll a d10.  On a 1 you take damage equal to half the damage dealt.</p>
+					<p class="indent"><b>Prototype.</b> When you expend phials to use <b>Amped Elemental Discharge</b> roll a d4.  On a 1 you take damage equal to half the damage dealt.</p>
 				</description>
 				<setters>
 					<set name="category">Magic Weapons</set>
