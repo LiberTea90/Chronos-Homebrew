@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.3.1">
+		<update version="1.3.2">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -224,6 +224,32 @@
 	</element>
 	
 	<!-- Wondrous Items -->
+	<element name="Fiona's Fantastic Foresight" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_FIONAS_FANTASTIC_FORESIGHT">
+		<description>
+			<p>This golden monocle can only be attuned to by the removal of the wearer's eye.  Once attuned and affixed to the wearer, a new eye magically regrows in its place granting the following benefits:</p>
+			<p>Darkvision - You have darkvision out to a range of 60 feet. If you already have darkvision its range is increased by an additional 60 feet.</p>
+			<p>You have Advantage on Wisdom (Perception) Checks involving sight.</p>
+			<p>You cannot be surprised, even while unconscious, and during a surprise round can act normally on your turn.</p>
+			<p>As an Action, you can gain the ability to see through walls and solid objects out to a range of 20 feet for 1 minute.  A thin sheet of lead blocks this ability.</p>
+			<p>1 / Day - Cast the <em>True Sight</em> spell without Material or Somatic components.</p>
+			<p>1 / Day - Cast the <em>Scrying</em> spell (save DC 17) without Material or Somatic components.</p>
+		</description>
+		<setters>
+			<set name="keywords">foresight</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+	
 	<element name="Cloak of the Gull" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_CLOAK_OF_THE_GULL">
 		<description>
 			<p>This cloak is bright white with a thick black trim along the bottom.</p>
