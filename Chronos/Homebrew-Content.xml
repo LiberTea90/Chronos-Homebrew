@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.3.2">
+		<update version="1.3.3">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -144,7 +144,7 @@
 					<set name="name-format">Prototype - Lightning Charge Blade Sword</set>
 				</setters>
 				<rules>
-					<stat name="ac:shield" value="1" bonus="enhancement" />
+					<stat name="ac:shield" value="3" bonus="enhancement" />
 				</rules>
 		</element>
 		
