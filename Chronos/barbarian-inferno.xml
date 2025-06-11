@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Inferno</name>
+		<update version="1.0">
+			<file name="barbarian-inferno.xml" url="FakeURL.xml" />
+		</update>
+	</info>
+
+	<!-- Path of the Totem Warrior -->
+	<element name="Path of the Inferno" type="Archetype" source="Player’s Handbook" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_PATH_OF_THE_TOTEM_WARRIOR">
+		<supports>Primal Path</supports>
+		<description>
+			<p>The Path of the Inferno infuses a Barbarian with primordial fire.  No one is quite certain of the source.  Perhaps it comes from a deep spiritual connection to the Plane of Fire?  A draconic lineage manifesting itself in an explosion of flame?  Or perhaps a family curse?  Whatever the cause these Barbarians rage into the battlefield with all the ferocity of a wild fire.</p>
+			<div element="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_ROARING_FIRE" />
+			<div element="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_MOLTEN_STRIKES" />
+			<div element="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_AVATAR_OF_FLAME" />
+			<div element="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_EXPLOSIVE_FURY" />
+			
+		</description>
+		<sheet display="false">
+			<description>The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_ROARING_FIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_MOLTEN_STRIKES" level="6" />
+			<grant type="Archetype Feature" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_AVATAR_OF_FLAME" level="10" />
+			<grant type="Archetype Feature" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_EXPLOSIVE_FURY" level="14" />
+		</rules>
+	</element>
+	<element name="Roaring Fire" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_ROARING_FIRE">
+		<description>
+			<p>Starting at 3rd level when you adopt this path, you gain Resistance to Fire damage.  While Raging you become Immune to Fire damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to Fire damage.  While Raging you become immune to Fire damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Molten Strikes" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_MOLTEN_STRIKES">
+		<description>
+			<p>At 6th level, your rage burns with such fury that it affects the weapons you wild.  While raging you can add an additional 2d4 Fire Damage to all attacks and can change the damage type of your weapon to Fire damage.</p>
+		</description>
+		<sheet>
+			<description>While raging you can add an additional 2d4 Fire Damage to all attacks and can change the damage type of your weapon to Fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Avatar of Flame" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_AVATAR_OF_FLAME">
+		<description>
+			<p>At 10th level, your primal connection to fire deepens, allowing you to share some of the benefits with your allies.  While raging, allied creatures within 10 feet of you gain resistance to Fire damage.</p>
+		</description>
+		<sheet>
+			<description>While raging, allied creatures within 10 feet of you gain resistance to Fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Explosive Fury" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_EXPLOSIVE_FURY">
+		<description>
+			<p>At 14th level, your explosive power of your rage unleashes fully.  When you enter your rage choose one of the following effects.  If an effect requires a saving throw the saves is equal to 8 + your proficiency bonus + your Constitution modifier).  After using this feature you cannot use it again until you finish a Short Rest.</p>
+			<ul>
+				<li><i><b>Explosion:</b></i> Upon entering your rage you cast <i>Fireball</i> centered on yourself.  All creatures within range must make a Dexterity Saving Throw, taking 8d6 Fire damage on a failed save or half as much on success.</li>
+				<li><i><b>Ring of Fire:</b></i> Upon entering your rage you cast <i>Wall of Fire</i> at base level without Concentration.  The wall must form a circle centered around you with a maximum radius of 10 feet.  The wall lasts for 1 minute or until your rage ends.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FIREBALL" />
+				<div element="ID_PHB_SPELL_WALL_OF_FIRE" />
+			</div>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Explosive Fury DC: {{explosive-fury:dc}}
+			</description>
+		</sheet>
+			<rules>
+			<stat name="explosive-fury:dc" value="8" />
+			<stat name="explosive-fury:dc" value="proficiency" />
+			<stat name="explosive-fury:dc" value="constitution:modifier" />
+			<grant type="Archetype Feature" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_POI_EXPLOSIVE_FURY_EXPLOSION" />
+			<grant type="Archetype Feature" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_POI_EXPLOSIVE_FURY_RING_OF_FIRE" />			
+		</rules>
+	</element>
+	
+	<element name="Explosive Fury: Explosion" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_POI_EXPLOSIVE_FURY_EXPLOSION">
+		<description>
+			<p>Upon entering your rage you cast <i>Fireball</i> centered on yourself.  All creatures within range must make a Dexterity Saving Throw, taking 8d6 Fire damage on a failed save or half as much on success.</p>
+		</description>
+		<sheet alt="Explosive Fury: Explosion" usage="Rage">
+			<description>Upon entering your rage you cast <i>Fireball</i> centered on yourself.  All creatures within range must make a Dexterity Saving Throw, taking 8d6 Fire damage on a failed save or half as much on success.</description>
+		</sheet>
+	</element>
+	<element name="Explosive Fury: Ring of Fire" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_POI_EXPLOSIVE_FURY_RING_OF_FIRE">
+		<description>
+			<p>Upon entering your rage you cast <i>Wall of Fire</i> at base level without Concentration.  The wall must form a circle centered around you with a maximum radius of 10 feet.  The wall lasts for 1 minute or until your rage ends.</p>
+		</description>
+		<sheet alt="Explosive Fury: Ring of Fire" usage="Rage">
+			<description>Upon entering your rage you cast <i>Wall of Fire</i> at base level without Concentration.  The wall must form a circle centered around you with a maximum radius of 10 feet.  The wall lasts for 1 minute or until your rage ends.</description>
+		</sheet>
+	</element>
+</elements>
