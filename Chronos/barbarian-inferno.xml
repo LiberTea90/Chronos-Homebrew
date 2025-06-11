@@ -3,7 +3,7 @@
 	<info>
 		<name>Path of the Inferno</name>
 		<update version="1.0">
-			<file name="barbarian-inferno.xml" url="FakeURL.xml" />
+			<file name="barbarian-inferno.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/refs/heads/master/Chronos/barbarian-inferno.xml" />
 		</update>
 	</info>
 
