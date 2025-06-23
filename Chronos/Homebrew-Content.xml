@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.3.6">
+		<update version="1.3.7">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -312,6 +312,112 @@
 			<set name="rarity">Very Rare</set>
 			<set name="stackable">true</set>
 		</setters>
+	</element>
+	
+	<element name="Matron's Wings - Shield Form" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ARMOR_MATRONS_WINGS_SHIELD_FORM">
+		<description>
+			<p>In this form the Matron's Wings take the shape of an obsidian shield.  While attuned and holding this shield you gain a +1 bonus to AC.  This bonus is in addition to the shield's normal bonus to AC.</p>
+			<p></p>
+			<p>As a Bonus Action you can change this magic item to any of its 3 forms.  You can only benefit from the effects of one form at a time.</p>
+			<p>
+				<ul>
+					<li>Shield Form</li>
+					<li>Cloak Form</li>
+					<li>Wing Form</li>
+				</ul>
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<element name="Matron's Wings - Cloak Form" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_MATRONS_WINGS_CLOAK_FORM">
+		<description>
+			<p>In this form the Matron's Wings take the shape of a black feathered cloak.  This cloak functions identically to a <i>Cloak of Displacement</i>.</p>
+				<div class="reference">
+					<div element="ID_WOTC_DMG_MAGIC_ITEM_CLOAK_OF_DISPLACEMENT" />
+				</div>
+			<p></p>
+			<p>As a Bonus Action you can change this magic item to any of its 3 forms.  You can only benefit from the effects of one form at a time.</p>
+			<p>
+				<ul>
+					<li>Shield Form</li>
+					<li>Cloak Form</li>
+					<li>Wing Form</li>
+				</ul>
+			</p>
+		</description>
+		<setters>
+			<set name="attunement">true</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+
+	<element name="Matron's Wings - Wing Form" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_MATRONS_WINGS_WING_FORM">
+		<description>
+			<p>In this form the Matron's Wings take the shape of a pair of black feathered wings.  The wings grant a flying speed of 60ft.</p>
+			<p></p>
+			<p>As a Bonus Action you can change this magic item to any of its 3 forms.  You can only benefit from the effects of one form at a time.</p>
+			<p>
+				<ul>
+					<li>Shield Form</li>
+					<li>Cloak Form</li>
+					<li>Wing Form</li>
+				</ul>
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+
+	<element name="Will of the Raven Queen" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_WILL_OF_THE_RAVEN_QUEEN">		
+		<description>
+			<p>This procelain white venetian style mask resembles the same mask worn by the Raven Queen with a large purple amethyst set directly in the middle of the brown line.</p>
+			<p class="indent">While you are attuned to and wear this mask, you gain the following benefits</p>
+			<ul>
+				<li>Raven Familiar - 1/Day - You can cast the <i>Find Familiar</i> spell as an Action.  When you do so using this ability the familiar always assumes the form of the Raven Queen's pet raven named Lenore.  The Raven disappears if you cast the spell again using other means.</li>
+				<li>Master of Death - 1/Day - You can cast <i>Revivify</i> as an Action without material components.  Additionally, if you are able to cast Revivify you no longer have to supply material components for the casting.</li>
+				<li>Wisdom Score Increase - Your Wisdom score increases by 2, as does your maximum for that score.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FIND_FAMILIAR"/>
+				<div element="ID_PHB_SPELL_REVIVIFY"/>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">head</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="wisdom:max" value="2" />
+		</rules>
 	</element>
 	
 	<!-- Feats -->
