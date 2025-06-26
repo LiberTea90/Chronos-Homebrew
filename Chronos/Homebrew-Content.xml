@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.4.0.1">
+		<update version="1.4.0.2">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -349,7 +349,7 @@
 
 	<element name="Will of the Raven Queen" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_WILL_OF_THE_RAVEN_QUEEN">		
 		<description>
-			<p>This procelain white venetian style mask resembles the same mask worn by the Raven Queen with a large purple amethyst set directly in the middle of the brow line.</p>
+			<p>This procelain white venetian style mask resembles the same mask worn by the Raven Queen with a large purple amethyst set directly in the middle of the brow line.  This mask can serve as a Spellcasting Focus for Clerics and Paladins.</p>
 			<p class="indent">While you are attuned to and wear this mask, you gain the following benefits:</p>
 			<ul>
 				<li>Raven Familiar - 1/Day - You can cast the <i>Find Familiar</i> spell as an Action without material components.  When you do so using this ability the familiar always assumes the form of the Raven Queen's pet raven named Lenore.  The Raven disappears if you cast the spell again using other means.</li>
