@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.3.9">
+		<update version="1.4.0">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -358,6 +358,8 @@
 			</ul>
 			<div class="reference">
 				<div element="ID_PHB_SPELL_FIND_FAMILIAR"/>
+			</div>
+			<div class="reference">
 				<div element="ID_PHB_SPELL_REVIVIFY"/>
 			</div>
 		</description>
