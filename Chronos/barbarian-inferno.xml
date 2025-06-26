@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Inferno</name>
-		<update version="1.1.1">
+		<update version="1.1.2">
 			<file name="barbarian-inferno.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/refs/heads/master/Chronos/barbarian-inferno.xml" />
 		</update>
 	</info>
@@ -55,7 +55,7 @@
 	</element>
 	<element name="Explosive Fury" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_EXPLOSIVE_FURY">
 		<description>
-			<p>At 14th level, the explosive power of your rage unleashes fully.  When you enter your rage choose one of the following effects.  If an effect requires a saving throw the saves is equal to 8 + your proficiency bonus + your Constitution modifier.  After using this feature you cannot use it again until you finish a Short Rest.</p>
+			<p>At 14th level, the explosive power of your rage unleashes fully.  When you enter your rage choose one of the following effects.  If an effect requires a saving throw the saves is equal to 8 + your proficiency bonus + your Constitution modifier.  You can use this feature a number of times equal to your Constitution Modifier.</p>
 			<ul>
 				<li><i><b>Explosion:</b></i> Upon entering your rage you cast <i>Fireball</i> at base level centered on yourself.  All creatures within range must make a Dexterity Saving Throw, taking 8d6 Fire damage on a failed save or half as much on success.</li>
 				<li><i><b>Ring of Fire:</b></i> Upon entering your rage you cast <i>Wall of Fire</i> at base level without Concentration.  The wall must form a circle centered on you with a maximum radius of 10 feet.  The wall lasts for 1 minute or until your rage ends.</li>
@@ -65,11 +65,13 @@
 				<div element="ID_PHB_SPELL_WALL_OF_FIRE" />
 			</div>
 		</description>
-		<sheet usage="1/Short Rest">
+		<sheet>
 			<description>Explosive Fury DC: {{explosive-fury:dc}}
+			Explosive Fury Uses: {{explosive-fury:count}}
 			</description>
 		</sheet>
 			<rules>
+			<stat name="explosive-fury:count" value="constitution:modifier" />
 			<stat name="explosive-fury:dc" value="8" />
 			<stat name="explosive-fury:dc" value="proficiency" />
 			<stat name="explosive-fury:dc" value="constitution:modifier" />
