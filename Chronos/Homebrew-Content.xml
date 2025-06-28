@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.4.0.2">
+		<update version="1.4.0.3">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -394,4 +394,18 @@
 		</sheet>
 	</element>
 		
+		
+	<!-- Homebrew Rules -->
+	<element name="Additional Feat at Level 1" type="Option" source="Chronos Homebrew" id="ID_CHRONOS HOMEBREW_OPTION_ADDITIONAL_FEAT_LEVEL_1">
+		<description>
+			<p>You may select an additional Feat at level 1.</p>
+		</description>
+		<setters>
+			<set name="short">You may select an additional Feat at level 1.</set>
+		</setters>
+		 <rules>
+			<select type="Feat" name="Feat (Level 1)" />
+		</rules>
+	</element>  
+	
 </elements>
