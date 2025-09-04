@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>class-gunslinger</name>
-		<update version="1.0">
+		<update version="1.0.1">
 			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/class-gunslinger.xml" />
 		</update>
 	</info>
