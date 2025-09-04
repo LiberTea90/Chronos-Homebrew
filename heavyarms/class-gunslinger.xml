@@ -240,6 +240,9 @@
 		<sheet>
 			<description>You have advantage on initiative rolls.  In addition, whenever you draw or stow a firearm, you can draw or stow any number of weapons as part of the same action.</description>
 		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
 	</element>
 	
 	<element name="Gunslinger Trail" type="Class Feature" source="Heavyarms" id="ID_HEAVYARMS_CLASS_GUNSLINGER_TRAIL">
