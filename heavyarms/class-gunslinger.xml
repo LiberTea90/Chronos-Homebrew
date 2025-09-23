@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>class-gunslinger</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/heavyarms/class-gunslinger.xml" />
 		</update>
 	</info>
@@ -75,7 +75,7 @@
 			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_QUICKDRAW" />
 			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_TRAIL" />
 			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_GUNSLINGER_EXTRAATTACK" />
 			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_LOCK_N_LOAD" />
 			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_ACE_IN_THE_HOLE" />
 			<div element="ID_HEAVYARMS_CLASS_GUNSLINGER_BORN_LUCKY" />
@@ -113,7 +113,7 @@
 			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_QUICKDRAW" level="2"/>
 			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_TRAIL" level="3"/>
 			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="4"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_GUNSLINGER_EXTRAATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_LOCK_N_LOAD" level="5"/>
 			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ACE_IN_THE_HOLE" level="7"/>
 			<grant type="Class Feature" id="ID_HEAVYARMS_CLASS_GUNSLINGER_ABILITYSCOREIMPROVEMENT_GUNSLINGER" level="8"/>
@@ -269,7 +269,7 @@
 			<select type="Class Feature" name="Improvement Option (Gunslinger 19)" supports="Improvement Option,Gunslinger,19" level="19" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK">
+	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_GUNSLINGER_EXTRAATTACK">
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
