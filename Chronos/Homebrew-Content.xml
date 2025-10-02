@@ -2,12 +2,56 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.4.0.3">
+		<update version="1.4.0.4">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
 	
 	<!-- Weapons -->
+	
+		<element name="AccelAxe" type="Proficiency" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" />
+	 
+			<append id="ID_INTERNAL_GRANTS_CHARACTER_BASE">
+				<rules>
+					<grant type="Proficiency" id="ID_CHRONOS_HOMEBREW_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" requirements="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+				</rules>
+			</append>
+	
+		<element name="Accel Axe" type="Weapon" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_WEAPON_ACCEL_AXE">
+			<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+			<setters>
+				<set name="category">Weapons</set>
+				<set name="cost" currency="gp">0</set>
+				<set name="weight" lb="8">8 lb.</set>
+				<set name="slot">twohand</set>
+				<set name="damage" type="slashing">1d12</set>
+				<set name="proficiency">ID_CHRONOS_HOMEBREW_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE</set>
+				<set name="rarity">Common</set>
+				<set name="attunement">true</set>
+				<set name="name-format">Accel Axe</set>
+			</setters>
+		</element>
+	
+		<element name="Accel Axe +1" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_ACCEL_AXE_1">
+			<description>
+				<p><i>You gain a +1 bonus on attacks and damage rolls.</i></p>
+				<p class="indent"><b>Accelerator Gauge.</b> When you hit with this weapon, you gain 1 charge up to a maximum of 5. You lose all charges, if you are knocked unconscious or don't hit a target within 1 minute.</p>
+				<p class="indent"><b>Detonation Velocity.</b> Detonation Velocity. When you hit a creature with this weapon, you can expend any number of charges to increase your weapon's damage by +1 for each charge expended.</p>
+				<p class="indent"><b>Accel Jump.</b> When you jump, you can expend charges to increase your jump's height or distance by an extra 5 feet for each charge expended. If the weapon is very rare or higher, the distance or height is increased by an additional 5 feet per charge.</p>
+				<p class="indent"><b>Burst Slash.</b> As an action you can expend up to 5 charges to unleash an accelerated slash against a creature within 5 feet of you. That creature must make a Dexterity saving throw against a DC equal to 8 + your Proficiency Bonus + your Strength Modifier. On a failed save, the target takes #d4 slashing damage, where # is equal to the number of charges expended. On a successful save, the target takes half as much damage.</p>
+				<p class="indent"><b>Dash Burst.</b> As a bonus action you can expend 1 charge to dash up to half of your movement speed. You can expend extra charges to move an additional 10 feet for each additional charge you expend.</p>
+			</description>
+			<setters>
+				<set name="category">Magic Weapons</set>
+				<set name="cost" currency="gp">0</set>
+				<set name="type" addition="common accel axe">Weapon</set>
+				<set name="rarity">Uncommon</set>
+				<set name="enhancement">1</set>
+				<set name="weapon">Accel Axe</set>
+				<set name="attunement">true</set>
+				<set name="name-format">Accel Axe +1</set>
+			</setters>
+		</element>
 	
 		<element name="ChargeBlade" type="Proficiency" source="Chronos Homebrew" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CHARGEBLADE" />
 	
