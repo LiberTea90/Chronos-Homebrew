@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Inferno</name>
-		<update version="1.1.3">
+		<update version="1.1.4">
 			<file name="barbarian-inferno.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/refs/heads/master/Chronos/barbarian-inferno.xml" />
 		</update>
 	</info>
@@ -39,10 +39,10 @@
 	</element>
 	<element name="Molten Strikes" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_MOLTEN_STRIKES">
 		<description>
-			<p>At 6th level, your rage burns with such fury that it affects the weapons you wield.  While raging you can add an additional 2d4 Fire Damage to all attacks and can change the damage type of your weapon to Fire damage.</p>
+			<p>At 6th level, your rage burns with such fury that it affects the weapons you wield.  While raging you can add an additional 2d4 Fire Damage to your melee or thrown weapon attacks and can change the damage type of the weapon to Fire damage.</p>
 		</description>
 		<sheet>
-			<description>While raging you can add an additional 2d4 Fire Damage to all attacks and can change the damage type of your weapon to Fire damage.</description>
+			<description>While raging you can add an additional 2d4 Fire Damage to your melee or thrown weapon attacks and can change the damage type of the weapon to Fire damage.</description>
 		</sheet>
 	</element>
 	<element name="Avatar of Flame" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_AVATAR_OF_FLAME">
@@ -55,7 +55,7 @@
 	</element>
 	<element name="Explosive Fury" type="Archetype Feature" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_ARCHETYPE_FEATURE_PATH_OF_THE_INFERNO_EXPLOSIVE_FURY">
 		<description>
-			<p>At 14th level, the explosive power of your rage unleashes fully.  When you enter your rage choose one of the following effects.  If an effect requires a saving throw the saves is equal to 8 + your proficiency bonus + your Constitution modifier.  You can use this feature a number of times equal to your Constitution Modifier.</p>
+			<p>At 14th level, the explosive power of your rage unleashes fully.  When you enter your rage choose one of the following effects.  If an effect requires a saving throw the save is equal to 8 + your proficiency bonus + your Constitution modifier.  You can use this feature a number of times equal to your Constitution Modifier.</p>
 			<ul>
 				<li><i><b>Explosion:</b></i> Upon entering your rage you cast <i>Fireball</i> at base level centered on yourself.  All creatures within range must make a Dexterity Saving Throw, taking 8d6 Fire damage on a failed save or half as much on success.</li>
 				<li><i><b>Ring of Fire:</b></i> Upon entering your rage you cast <i>Wall of Fire</i> at base level without Concentration.  The wall must form a circle centered on you with a maximum radius of 10 feet.  The wall lasts for 1 minute or until your rage ends.</li>
