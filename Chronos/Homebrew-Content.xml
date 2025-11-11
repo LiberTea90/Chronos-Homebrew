@@ -2,13 +2,44 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.4.0.4">
+		<update version="1.4.0.5">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
 	
 	<!-- Weapons -->
 	
+		<element name="Throwing Hammer" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_THROWING_HAMMER">
+			<supports>ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+			<description>
+				<p>You have a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+				<p>When a creature is attuned to this weapon it gains the "Thrown" property:</p>
+				<p></p>
+				<p>Range: 20/60 ft</p>
+				<p></p>
+				<p>An attuned creature may use an attack to throw the weapon at a target.  Immediately after hitting or missing the target the weapon teleports back to the attuned creature's hand.</p>
+				<p>When throwing the weapon, roll a D6.  On any roll other than a 1, add the number rolled to the damage dealt on a hit.</p>
+				<p></p>
+				<p><b>Defect. "No, you."</b></p>
+				<p>If the number rolled on the D6 when throwing the hammer is a 1 the hammer throws you at the target instead.</p>
+				<p>Make a weapon attack against the target. </p>
+				<p>On a hit, you each take bludgeoning damage as if you were falling half the distance traveled (rounded up) and must make a DC 15 Strength saving throw.  A creature who fails this save is knocked prone.</p>
+				<p>On a miss, you take bludgeoning damage as if you were falling half the distance traveled (rounded up) and must make a DC 15 Strength saving throw or be knocked prone.</p>
+
+				
+			</description>
+			<setters>
+			   <set name="keywords">warhammer</set>
+				<set name="category">Magic Weapons</set>
+				<set name="cost" currency="gp">0</set>
+				<set name="type" addition="warhammer">Weapon</set>
+				<set name="attunement">true</set>
+				<set name="rarity">Rare</set>
+				<set name="enhancement">2</set>
+				<set name="weapon">Warhammer</set>
+			</setters>
+		</element>
+		
 		<element name="AccelAxe" type="Proficiency" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_PROFICIENCY_WEAPON_PROFICIENCY_ACCELAXE" />
 	 
 			<append id="ID_INTERNAL_GRANTS_CHARACTER_BASE">
@@ -269,6 +300,77 @@
 	
 	<!-- Wondrous Items -->
 	
+	<element name="False Pearl of Power" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_FALSE_PEARL_OF_POWER">
+		<description>
+			<p>While this pearl is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you use the pearl, it can't be used again until the next dawn.</p>
+            <p></p>
+            <p><b>Defect.  "It's Fake"</b></p>
+            <p>When using the pearl make an Intelligence Saving Throw (DC 10).  On a failure instead of granting a spell slot the pearl instead consumes a spell slot equal to the one being gained.  If no spell slot of that level is available it will consume a random spell slot as determined by the DM via a dice roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellcaster</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Boots of Relentless Haste" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_BOOTS_OF_RELENTLESS_HASTE">
+        <description>
+            <p>Charges: 3 / Day</p>
+            <p>While wearing these boots an attuned creature can spend one charge to cast the "Haste" spell on themselves.  The boots regain all charges at Dawn.</p>
+            <p></p>
+            <p><b>Defect.  "Can't Stop."</b>></p>
+            <p>When spending a charge, roll a D4.  On a roll of 1 the magic within the boots warps, causing the following effects:</p>
+            <ul>
+                <li>You may only move in a straight line up to your movement speed</li>
+                <li>If you take the Attack action to make a melee attack against a creature while in motion you may only make one attack against that target.</li>    
+            </ul>
+            <p>On your following turn(s) you must keep moving in the same direction until one of the following criteria is met:</p>
+            <ul>
+                <li>You make contact with a wall or other obstacle.  You receive bludgeoning damage as if you were falling 1/2 of the distance traveled (rounded up).</li>
+                <li>You make contact with another creature.  You and the other creature receive bludgeoning damage as if you were falling 1/4 of the distance traveled (rounded up).</li>
+                <li>You drop concentration on the "Haste" spell.</li>
+                <li><b>Your character is NOT aware of any defect in the magic until they attempt to move.</b></li>
+            </ul>
+            <div class="reference">
+					<div element="ID_PHB_SPELL_HASTE" />
+			</div>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+    <element name="Thunder Boots" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_THUNDER_BOOTS">
+        <description>
+            <p>Charges: 3 / Day</p>
+            <p>While wearing these boots an attuned creature can spend one charge to cast the "Thunder Step" spell at base level, Save DC 13.  The boots regain all charges at Dawn.</p>
+            <p></p>
+            <p><b>Defect. "Rolling Thunder"</b></p>
+            <p>After spending a charge, roll a d6.  On a 1 the damaging effects of the Thunder Step spell do not occur at the space you left.  The effects instead occur at the space you arrive in, affecting all creatures within 10 feet, including you.</p>
+            <div class="reference">
+					<div element="ID_XGTE_SPELL_THUNDER_STEP" />
+			</div>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+	
 	<element name="Lycan Blood Vial" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_LYCAN_BLOOD_VIAL">
 		<description>
 			<p>An enchanted glass vial filled with the blood of a Lycanthrope</p>
@@ -420,6 +522,65 @@
 			<stat name="wisdom" value="2" />
 			<stat name="wisdom:max" value="2" />
 		</rules>
+	</element>
+	
+	
+	
+	<!-- Staffs -->
+	
+	<element name="Petty Staff of Polymorph" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_PETTY_STAFF_OF_POLYMORPH">
+        <description>
+            <p>Charges: 3 / Day</p>
+            <p>As an Action while holding the staff you can spend one charge to cast the "Polymorph" spell.  The staff regains all charges at the next Dawn.</p>
+            <p></p>
+            <p><b>Defect.  "Petty"</b></p>
+            <p>The staff is conscious, petty, and unwilling to cooperate with users that it deems unworthy.</p>
+            <p>When spending a charge, state the name of the creature you wish to turn your target into and make a Persuasion check (DC 17).  On a failure the staff casts the spell but chooses a creature randomly from the table below:</p>
+            <p>Roll a D4*</p>
+            <ul>
+                <li>1 - Rat</li>
+                <li>2 - Sheep</li>
+                <li>3 - Bat</li>
+                <li>4 - Mastiff</li>
+            </ul>
+            <p>* - If the creature named during the casting is on this list re-roll until a different creature is chosen.</p>
+            <p><b>A willing target of the spell makes no save to avoid the unintended transformation.</b></p>
+
+            <div class="reference">
+					<div element="ID_PHB_SPELL_POLYMORPH" />
+			</div>
+        </description>
+        <setters>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+	<!-- Rings -->
+	
+	<element name="Ring of Split Spells" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_RING_OF_SPLIT_SPELLS">
+		<description>
+			<p>2 Charges / Day</p>
+            <p>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a charge to target a second creature in range with the same spell.  The ring regains all charges at the next Dawn.</p>
+            <p>To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level.</p>
+            <p></p>
+            <p><b>Defect.  "Random Target"</b></p>
+            <p>The ring's accuracy is not perfect.  When using the feature of this ring roll a D4.  On a roll of a 1 the secondary target of your spell becomes a random creature in range as determined by the DM via a dice roll.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Very Rare</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
 	</element>
 	
 	<!-- Feats -->
