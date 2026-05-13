@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Homebrew-Content</name>
-		<update version="1.4.0.5">
+		<update version="1.4.0.6">
 			<file name="Homebrew-Content.xml" url="https://raw.githubusercontent.com/LiberTea90/Chronos-Homebrew/master/Chronos/Homebrew-Content.xml" />
 		</update>
 	</info>
@@ -524,7 +524,98 @@
 		</rules>
 	</element>
 	
+	<element name="Destroyer of Gods" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_DESTROYER_OF_GODS">		
+		<description>
+			<p>This skeletal arm requires the wielder to cut off their own arm and replace it with this one in order to attune.  Upon doing so the wielder's flesh regrows over the arm.</p>
+			<p class="indent">While you are attuned to the arm, you gain the following benefits:</p>
+			<ul>
+				<li><b>Charges:</b> When you score a Critical Hit you gain 1 charge (up to a Max of 3). On the 3rd charge you can immediately hit for Max Damage or store it for up to 3 Days.  Upon the 3rd Day's passing, the 3 Charges become Tattoos on your body to be used at the DM's Discretion.</li>
+				<li><b>To Hit Bonus:</b> While your arm has at least 1 charge you gain a bonus to Attack rolls.  +5 To Hit (1 Charge), +7 To Hit (2 Charges), +10 To Hit (3 Charges)</li>
+				<li><b>Additional Damage:</b> When you hit a creature with an attack roll the attack deals an additional 1d12 + 1d6 of the damage type.</li>
+				<li><b>Bonus Damage:</b> On a Hit you can expend a number of charges to deal additional damage of the attack's type.  1 Charge - 25, 2 Charges - 50, 3 Charges - 100</li>
+				<li><b>Ally Threat:</b> If at any point you roll a 1 on an attack roll you immediately hit the nearest ally for 68 points of damage of the attack's type.  This damage is doubled to 136 points at level 10.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">arms</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
 	
+	<element name="Flash Fire Stone" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_FLASH_FIRE_STONE">		
+		<description>
+			<p>A magical whetsone which always appears to smolder like a lit coal.</p>
+			<p>As a Bonus Action a creature can slide the stone across a Melee Weapon, causing the weapon to ignite for 1 Minute.  While ignited, the weapon deals an additional 1d6 Fire Damage.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
+	
+	<element name="Mask of Shadows" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_MASK_OF_SHADOWS">		
+		<description>
+			<p>This mask is completely black and has no visible features or markings.</p>
+			<p>As an Action, an Attuned creature can place the mask over their face to cast the <i>Darkness</i> spell.  The spell is centered on the mask and moves with it.</p>
+			<p>The spell lasts for the duration or until the mask is removed.  An Attuned creature wearing the mask can see through the darkness created by the spell.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_DARKNESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<element name="Spell Storing Bookmark" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_SPELL_STORING_BOOKMARK">		
+		<description>
+			<p>A magical bookmark with runic carvings etched in gold dust.</p>
+			<p>Once per day an Attuned creature can roll a D20.  If a 20 is rolled the Attuned Creature gains an additional spell slot equal to half of their highest spell slot (rounded up).</p>
+			<p>If a 1 is rolled, ask the DM what happens instead.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" >Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+		</setters>
+	</element>
+	
+	<element name="Bear Trap Mask" type="Magic Item" source="Chronos Homebrew" id="ID_CHRONOS_HOMEBREW_MAGIC_ITEM_BEAR_TRAP_MASK">		
+		<description>
+			<p>A wrought iron mask which looks to have been put together from the remains of a bear trap.</p>
+			<p>While carrying this mask an Attuned creature gains the following benefits:</p>
+			<ul>
+				<li>When Wild Shaped, if the form chosen has a mouth and is capable of making grapple checks, you have Advantage on the roll used to make the check.  On a success you deal 1d6 Piercing damage to the grappled creature.</li>
+				<li>A grappled creature has Disadvantage on checks made to break the grapple.</li>
+				<li>A grappled creature takes an additioinal 1d4 Piercing damage at the end of each turn they remain grappled.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a Druid">true</set>
+		</setters>
+	</element>
 	
 	<!-- Staffs -->
 	
